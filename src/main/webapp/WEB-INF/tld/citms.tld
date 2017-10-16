@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+<tlibversion>1.2</tlibversion>
+<jspversion>1.1</jspversion>
+<shortname>bsi</shortname>
+<uri></uri>
+<tag>
+	<name>nameShow</name>
+	<tagclass>cn.citms.tag.NameTag</tagclass>
+	<attribute>
+		<name>id</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>type</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+<tag>
+	<name>dbselect</name>
+	<tagclass>cn.citms.tag.FormSelectDbTag</tagclass>
+	<attribute>
+		<name>name</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	
+	<attribute>
+		<name>inputForm</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	
+	<attribute>
+		<name>id</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>hql</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	
+	<attribute>
+		<name>lableField</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	
+	<attribute>
+		<name>valueField</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	
+	<attribute>
+		<name>serviceName</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>schoolId</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	
+	<attribute>
+		<name>classCode</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>options</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>value</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>style</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>css</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>disabled</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>readonly</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>onchange</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>showBlank</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>blankLabel</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+<!--  -->
+<tag>
+	<name>select</name>
+	<tagclass>cn.citms.tag.FormSelectTag</tagclass>
+	<attribute>
+		<name>name</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>id</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>optionString</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>options</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>value</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>style</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>css</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>disabled</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>readonly</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>onchange</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>showBlank</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+
+
+<tag>
+	<name>relation</name>
+	<tagclass>cn.citms.tag.RelationTag</tagclass>
+	<attribute>
+		<name>beanName</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>value</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>fkName</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>itemBean</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+
+<tag>
+	<name>customLabel</name>
+	<tagclass>cn.citms.tag.CustomLabelTag</tagclass>
+	<attribute>
+		<name>key</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>value</name>
+		<required>true</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+	<attribute>
+		<name>multiple</name>
+		<required>false</required>
+		<rtexprvalue>true</rtexprvalue>
+	</attribute>
+</tag>
+
+
+
+
+
+</taglib>

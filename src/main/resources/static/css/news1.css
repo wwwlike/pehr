@@ -1,0 +1,3881 @@
+.AppChat {
+ height:100%;
+ overflow-y:auto
+}
+.AppChat audio,.AppChat canvas,.AppChat progress,.AppChat video {
+ display:inline-block;
+ vertical-align:baseline
+}
+.AppChat audio:not([controls]) {
+ display:none;
+ height:0
+}
+.AppChat [hidden],.AppChat template {
+ display:none
+}
+.AppChat a:active,.AppChat a:hover {
+ outline:0
+}
+.AppChat abbr[title] {
+ border-bottom:1px dotted
+}
+.AppChat b,.AppChat strong {
+ font-weight:700
+}
+.AppChat dfn {
+ font-style:italic
+}
+.AppChat h1 {
+ font-size:2em;
+ margin:.67em 0
+}
+.AppChat mark {
+ background:#ff0;
+ color:#000
+}
+.AppChat small {
+ font-size:80%
+}
+.AppChat sub,.AppChat sup {
+ font-size:75%;
+ line-height:0;
+ position:relative;
+ vertical-align:baseline
+}
+.AppChat sup {
+ top:-.5em
+}
+.AppChat sub {
+ bottom:-.25em
+}
+.AppChat img {
+ border:0
+}
+.AppChat svg:not(:root) {
+ overflow:hidden
+}
+.AppChat figure {
+ margin:1em 40px
+}
+.AppChat hr {
+ box-sizing:content-box;
+ height:0
+}
+.AppChat pre {
+ overflow:auto
+}
+.AppChat code,.AppChat kbd,.AppChat pre,.AppChat samp {
+ font-family:monospace,monospace;
+ font-size:1em
+}
+.AppChat button {
+ overflow:visible
+}
+.AppChat button,.AppChat select {
+ text-transform:none
+}
+.AppChat button,.AppChat input[type=button],.AppChat input[type=reset],.AppChat input[type=submit] {
+ -webkit-appearance:button;
+ cursor:pointer
+}
+.AppChat button[disabled],.AppChat input[disabled] {
+ cursor:default
+}
+.AppChat button::-moz-focus-inner,.AppChat input::-moz-focus-inner {
+ border:0;
+ padding:0
+}
+.AppChat input {
+ line-height:normal
+}
+.AppChat input[type=number]::-webkit-inner-spin-button,.AppChat input[type=number]::-webkit-outer-spin-button {
+ height:auto
+}
+.AppChat input[type=search] {
+ -webkit-appearance:textfield;
+ box-sizing:content-box
+}
+.AppChat input[type=search]::-webkit-search-cancel-button,.AppChat input[type=search]::-webkit-search-decoration {
+ -webkit-appearance:none
+}
+.AppChat fieldset {
+ border:1px solid silver;
+ margin:0 2px;
+ padding:.35em .625em .75em
+}
+.AppChat legend {
+ border:0;
+ padding:0
+}
+.AppChat textarea {
+ overflow:auto
+}
+.AppChat optgroup {
+ font-weight:700
+}
+.AppChat table {
+ border-collapse:collapse;
+ border-spacing:0
+}
+.AppChat td,.AppChat th {
+ padding:0
+}
+.AppChat body {
+ overflow:hidden
+}
+.AppChat #container,.AppChat body,.AppChat form {
+ height:100%
+}
+.AppChat #container {
+ width:100%;
+ margin:0;
+ max-width:100%;
+ position:fixed;
+ top:0;
+ bottom:0
+}
+.AppChat .fancyHome {
+ position:relative;
+ width:100%;
+ height:100%
+}
+.AppChat .fancyHome .nano .nano-pane {
+ background:none
+}
+.AppChat .fancyHome .nano .nano-pane .nano-slider {
+ background-color:#d9d9d9;
+ width:5px
+}
+.AppChat div.fancyHomeLoading {
+ margin-top:70px!important;
+ position:absolute;
+ top:0
+}
+.AppChat .windowLoading {
+ position:absolute;
+ top:0;
+ height:100%;
+ background:hsla(0,0%,100%,.7)
+}
+.AppChat .windowLoading .divCenter {
+ margin-top:200px
+}
+.AppChat button {
+ outline:0;
+ border:none;
+ cursor:pointer
+}
+.AppChat .fancyHome * {
+ box-sizing:border-box
+}
+.AppChat body .modal .modalContainer {
+ padding:10px
+}
+[class^=iconFile] {
+ display:inline-block;
+ vertical-align:middle;
+ width:34px;
+ height:40px;
+ background-size:cover
+}
+.iconFileDefault {
+ background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK8AAADICAYAAACeY7GXAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA71JREFUeNrs3LFOU1EcwOHTetukhBbsYEjwAYiLqyMLrg68gA9gCI9CiA/gA9CBVRdGwsYiLyCJaGygJSBYuN4rxeDk1NB/7/clzR1Yruf8cjxtTk4tz/P0UK/XWy0em8WnfC4kZs73k5PhaDR6/W5jYz/yv6N2H28R7WLx+FB83pje2fbt5Gu6+nl1nmXZWuSA6w/C3RNudeQpny9W30/vt7dfhY53vOK+NKUCDhXveI9rxRVwuIDr4y9nCDhcwPXxrwoIOFzAZbx+DiNkwHVTRtSAxUvYgMVL2IDFS9iAxUvYgMVL2IDFS9iAxUvYgMVL2IDFS9iAxUvYgMVL2IDFS9iAxUvYgMVL2IDFS9iAxUvYgMVL2IDFS9iAxUvYgMVL2IDFS9iAxUvYgMVL2IDFS9iAxUvYgMVL2IDFS9iAxUvYgMVL2IDFS9iAxUvYgMVL2IDFS9iAxVtBjUZzJgIWbwU1m80Q7/m/gMVbQa25uZnYQoi3gur1emq3O+EDFm9FLSwupmajGTpg8VZ49X22tBQ64NrOzk5uKqvr9vY2nZ2epuFwEOada6l2nmXZWmb6rMBPu93U6XTSxeVFur66Tjc3o2l/7fki4I/i5Y8nWXb3Ja4d5pXb9rzE/V/DECBeEC+IF/GCeEG8IF7EC+IF8SJeEC+IF8RLfKEOo5en/RuZ8/OT8ms0SoPBQLyT8GJlJXW7XZVNSL/fT/sHB7YNIF4QL+IF8YJ4ES+IF8QL4kW8ME1CnW0YDIdmzPjGjPfz0ZHCsG1AvCBeEC/iBfGCeEG8iBfEC+JFvCBeEC+Il1kS6jzv8+Xl1Gq1zNqEXF5epi/Hx+KdVLxuiZyc8pbISPHaNmDPC+IF8SJeEC+IF8SLeEG8IF4qwS2RhB1ft0Ri2wDiBfEiXhAviBfEi3hBvCBexAviBfGCeBEvPB63RAZQXn5X3uBI8HireEtkeXujeG0bEC+IF8SLeEG8IF4QL+IF8YJ4qahQZxvKAyo/+v3KTdKFcw2zES/YNiBeEC+IF/GCeEG8IF7EC+IF8SJeEC+IF8SLeEG8IF7EC+IF8YJ4ES+IF8SLeEG8IF4QL+IF8YJ4ES+IF8QL4kW8IF4QL+I1BIgXxAviRbwgXhAviBfxgnhBvIgXpjzeM8NAQGdlvHvGgYD2yni3jAMBbdXX19fLlXfXWBDIbtnt/Re2t8Xn0JgQwOG417tfG4qKT4vHqhWYaV9xy07HvaZanuf//LXX65URb45jXjBePLLy17Bya7s13uL+9VuAAQDgsPp4GIGv9gAAAABJRU5ErkJggg==)
+}
+.iconFileWord {
+ background-image:url(data:image/png;base64,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)
+}
+.iconFileExcel {
+ background-image:url(data:image/png;base64,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)
+}
+.iconFileMMAP {
+ background-image:url(data:image/png;base64,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)
+}
+.iconFilePDF {
+ background-image:url(data:image/png;base64,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)
+}
+.iconFilePic {
+ background-image:url(data:image/png;base64,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)
+}
+.iconFilePPT {
+ background-image:url(data:image/png;base64,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)
+}
+.iconFileRAR {
+ background-image:url(data:image/png;base64,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)
+}
+.iconFileVSD {
+ background-image:url(data:image/png;base64,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)
+}
+.iconFile7Z {
+ background-image:url(data:image/png;base64,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)
+}
+.iconFileZIP {
+ background-image:url(data:image/png;base64,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)
+}
+.iconRotate45 {
+ -webkit-transform:rotate(45deg);
+ transform:rotate(45deg)
+}
+.iconRotate360 {
+ -webkit-transform:rotate(1turn);
+ transform:rotate(1turn)
+}
+.loadingPage {
+ width:100%;
+ height:100%;
+ background-color:#fff;
+ z-index:9999;
+ position:relative
+}
+.loadingPage img {
+ top:50%;
+ left:50%;
+ position:absolute;
+ margin-top:-60px;
+ display:block
+}
+.AppChat .fancyHome a {
+ text-decoration:none
+}
+.AppChat .fancyHome :not(.nano-content)::-webkit-scrollbar-thumb {
+ border-radius:3px;
+ background:rgba(0,0,0,.15);
+ width:4px;
+ margin:0 1px
+}
+.AppChat .fancyHome :not(.nano-content)::-webkit-scrollbar {
+ width:4px;
+ background:transparent
+}
+.AppChat .fancyHome input[type=checkbox]:disabled {
+ cursor:not-allowed
+}
+.AppChat .fancyHome input[type=checkbox]:disabled:after {
+ background-color:#f5f5f5;
+ border-color:#e5e5e5
+}
+.AppChat .fancyHome input[type=checkbox]:disabled:checked:before {
+ border-color:#ccc
+}
+.AppChat .fancyHome input[type=checkbox]:disabled:checked:after {
+ border:none!important;
+ background:none!important
+}
+.AppChat .fancyHome .icon-chat-vip {
+ color:#f6bc2e
+}
+.AppChat .fancyHome .icon-task-participate {
+ color:#ff6d00
+}
+.AppChat .fancyHome .flexbox {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex
+}
+.AppChat .fancyHome .flexbox.align-center {
+ -webkit-box-align:center;
+ -ms-flex-align:center;
+ align-items:center
+}
+.AppChat .fancyHome .btn {
+ padding:10px 20px;
+ color:#fff;
+ font-size:16px;
+ border:none;
+ border-radius:3px;
+ box-shadow:none
+}
+.AppChat .fancyHome .btn.btnSuccess {
+ background:#3cbb46
+}
+.AppChat .fancyHome .btn.btnError {
+ background:#de302f
+}
+.AppChat .fancyHome .btn.btnLink {
+ background:none;
+ padding:0;
+ border:none;
+ color:#999
+}
+.AppChat .fancyHome .btn.btnBlock {
+ display:block;
+ width:100%
+}
+.AppChat .fancyHome .btn [class*=" icon-"],.AppChat .fancyHome .btn [class^=icon-] {
+ font-size:16px;
+ vertical-align:middle
+}
+.AppChat .fancyHome .clearfix:after,.AppChat .fancyHome .clearfix:before {
+ content:" ";
+ display:table
+}
+.AppChat .fancyHome .clearfix:after {
+ clear:both
+}
+.AppChat .fancyHome .row:after,.AppChat .fancyHome .row:before {
+ content:" ";
+ display:table
+}
+.AppChat .fancyHome .row:after {
+ clear:both
+}
+.AppChat .fancyHome .userAvatar {
+ display:inline-block;
+ width:38px;
+ height:38px;
+ border-radius:50%;
+ background-clip:padding-box;
+ overflow:hidden
+}
+.AppChat .fancyHome .userAvatar img {
+ width:100%;
+ height:100%
+}
+.AppChat .fancyHome .pullLeft {
+ float:left
+}
+.AppChat .fancyHome .pullRight {
+ float:right
+}
+.AppChat .fancyHome .separator {
+ border:0;
+ display:block;
+ margin:10px 0;
+ border-bottom:1px solid #e8e8e8
+}
+.AppChat .fancyHome .tooltip {
+ position:absolute;
+ display:none;
+ z-index:99;
+ background:#fff;
+ border:1px solid #e7e7e7;
+ box-shadow:2px 2px 5px hsla(0,0%,88%,.5);
+ padding:8px 10px;
+ left:100%;
+ border-radius:4px;
+ background-clip:padding-box
+}
+.AppChat .fancyHome .tooltip .tooltipArrow {
+ position:absolute;
+ left:-8px;
+ bottom:20px;
+ border:9px solid transparent;
+ border-right-color:#fff;
+ border-left:0
+}
+.AppChat .fancyHome .unreadTip {
+ position:absolute;
+ width:20px;
+ height:20px;
+ line-height:20px;
+ border-radius:50px;
+ text-align:center;
+ font-size:12px;
+ color:#fff;
+ background:red
+}
+.AppChat .fancyHome .unreadTip.weakCountTip {
+ -webkit-transform:scale(.6);
+ transform:scale(.6)
+}
+.AppChat .fancyHome .icon-ancrown,.AppChat .fancyHome .icon-crown {
+ color:#f6bc2e
+}
+.AppChat .fancyHome .nano-pane {
+ background:transparent none repeat scroll 0 0
+}
+.AppChat .fancyHome .userItem {
+ line-height:45px;
+ height:45px;
+ width:100%;
+ cursor:pointer;
+ overflow:hidden
+}
+.AppChat .fancyHome .userItem:hover {
+ background:#bfc2c7
+}
+.AppChat .fancyHome .userItem .status {
+ display:inline-block;
+ margin-left:11px;
+ margin-right:8px;
+ width:12px
+}
+.AppChat .fancyHome .userItem .userAvatar {
+ vertical-align:middle;
+ margin-right:8px
+}
+.AppChat .fancyHome .userItem .btnCancel {
+ display:inline-block;
+ font-size:14px;
+ padding-left:10px
+}
+.AppChat .fancyHome .nano .nano-content:focus {
+ outline:none
+}
+.AppChat .fancyHome .nano .nano-pane {
+ width:5px;
+ border-radius:0
+}
+.AppChat .fancyHome .nano .nano-pane .nano-slider {
+ border-radius:0
+}
+.AppChat .fancyHome .bgTransparent {
+ background:transparent!important
+}
+.AppChat .fancyHome .chatIconButton {
+ background:none;
+ padding:0;
+ border:none;
+ box-shadow:none;
+ cursor:pointer
+}
+.AppChat .fancyHome .chatIconButton:not(:hover) {
+ color:#b0b0b0!important
+}
+.AppChat .fancyHome .chatIconButton-vip {
+ font-size:0
+}
+.AppChat .fancyHome .chatIconButton-vip .icon-chat-vip {
+ font-size:14px;
+ margin-top:-1px;
+ display:inline-block
+}
+.AppChat .fancyHome .chatIconButton-editGroup {
+ font-size:0;
+ transition:-webkit-transform .3s ease 0s;
+ transition:transform .3s ease 0s;
+ transition:transform .3s ease 0s,-webkit-transform .3s ease 0s
+}
+.AppChat .fancyHome .chatIconButton-editGroup i.icon-setting-six {
+ font-size:19px;
+ display:inline-block
+}
+.AppChat .fancyHome .chatIconButton-editGroup i {
+ cursor:pointer
+}
+.AppChat .fancyHome .chatIconButton .icon-chat-group2,.AppChat .fancyHome .chatIconButton .icon-chat-person-add,.AppChat .fancyHome .chatIconButton .icon-mute-off,.AppChat .fancyHome .chatIconButton .icon-mute-on {
+ font-size:20px
+}
+.AppChat .fancyHome .chatIconButton-groupInfoSwitch {
+ opacity:1;
+ font-size:0
+}
+.AppChat .fancyHome .chatIconButton-groupInfoSwitch [class^=icon] {
+ font-size:20px;
+ display:inline-block;
+ cursor:pointer
+}
+.AppChat .fancyHome .chatIconButton-groupInfoSwitch .icon-mute-on {
+ color:#f44336!important
+}
+.AppChat .fancyHome .chatIconButton-groupInfoSwitch .icon-sidebar-start {
+ margin-top:-1px;
+ font-size:19px
+}
+.AppChat .fancyHome .chatIconButton-groupInfoSwitch .icon-sidebar-up {
+ font-size:18px
+}
+.AppChat .fancyHome .chatIconButton-checkGorupPost {
+ margin-top:-1px
+}
+.AppChat .fancyHome .topBar {
+ height:50px;
+ background:#fff;
+ border-bottom:2px solid hsla(0,0%,79%,.3);
+ color:#999;
+ font-size:16px;
+ line-height:50px;
+ box-sizing:border-box
+}
+.AppChat .fancyHome .topBar .wcName {
+ float:left;
+ width:270px
+}
+.AppChat .fancyHome .topBar .wcName img {
+ vertical-align:-5px;
+ margin-left:20px
+}
+.AppChat .fancyHome .topBar .wcName .btnToolbar {
+ display:none;
+ border:2px solid #c1c1c1;
+ border-top:0;
+ height:46px;
+ background:none;
+ box-sizing:border-box;
+ padding:0 10px
+}
+.AppChat .fancyHome .topBar .wcName .btnToolbar .iconSlider {
+ display:block;
+ position:relative;
+ width:25px;
+ height:5px;
+ background:#007ddb
+}
+.AppChat .fancyHome .topBar .wcName .btnToolbar .iconSlider:after,.AppChat .fancyHome .topBar .wcName .btnToolbar .iconSlider:before {
+ position:absolute;
+ left:0;
+ width:100%;
+ height:5px;
+ background:#007ddb;
+ content:""
+}
+.AppChat .fancyHome .topBar .wcName .btnToolbar .iconSlider:before {
+ margin-top:-10px
+}
+.AppChat .fancyHome .topBar .wcName .btnToolbar .iconSlider:after {
+ margin-top:10px
+}
+.AppChat .fancyHome .toolbar-blured {
+ -webkit-filter:blur(10px) saturate(1.5);
+ height:100%;
+ background-attachment:fixed;
+ position:fixed;
+ z-index:5;
+ left:0;
+ top:50px;
+ bottom:0;
+ width:250px;
+ overflow:hidden
+}
+.AppChat .fancyHome .bottomContent {
+ position:absolute;
+ width:100%;
+ top:0;
+ bottom:0
+}
+.AppChat .fancyHome .toolbar {
+ width:250px;
+ position:absolute;
+ bottom:0;
+ left:0;
+ top:50px;
+ z-index:10
+}
+.AppChat .fancyHome .toolbar .tabNav {
+ padding:12px 16px;
+ font-size:0
+}
+.AppChat .fancyHome .toolbar .navItem {
+ width:25%;
+ box-sizing:border-box;
+ display:inline-block;
+ cursor:pointer;
+ text-align:center;
+ vertical-align:middle
+}
+.AppChat .fancyHome .toolbar .navItem.session {
+ position:relative
+}
+.AppChat .fancyHome .toolbar .navItem.session .unreadTip {
+ top:-6px;
+ left:28px
+}
+.AppChat .fancyHome .toolbar .navItem i {
+ font-size:20px;
+ display:inline-block
+}
+.AppChat .fancyHome .toolbar .navItem .icon-chat-session,.AppChat .fancyHome .toolbar .navItem .icon-task-person {
+ font-size:20px
+}
+.AppChat .fancyHome .toolbar .navItem .icon-chat-group2 {
+ font-size:25px
+}
+.AppChat .fancyHome .toolbar .navItem .icon-home-navigation {
+ font-size:17px
+}
+.AppChat .fancyHome .toolbar .panelList {
+ position:absolute;
+ top:90px;
+ bottom:50px;
+ width:100%;
+ border-style:solid;
+ border-width:1px;
+ border-left-color:transparent!important;
+ border-right-color:transparent!important;
+ margin-top:8px
+}
+.AppChat .fancyHome .toolbar .panelList:not(.done) .nano .nano-content {
+ overflow:hidden
+}
+.AppChat .fancyHome .toolbar .panelList .panel {
+ opacity:0;
+ display:none;
+ height:100%;
+ transition:opacity .3s cubic-bezier(.62,-.06,.32,1.02)
+}
+.AppChat .fancyHome .toolbar .panelList .panel.active {
+ display:block;
+ opacity:1
+}
+.AppChat .fancyHome .toolbar .panelList .nano .nano-pane {
+ background:none
+}
+.AppChat .fancyHome .toolbar .panelList .nano .nano-pane .nano-slider {
+ background:hsla(0,0%,59%,.5)
+}
+.AppChat .fancyHome .toolbar .userName {
+ height:inherit;
+ line-height:inherit;
+ vertical-align:middle;
+ opacity:inherit;
+ color:#fff
+}
+.AppChat .fancyHome .groupList {
+ height:100%
+}
+.AppChat .fancyHome .groupList .group {
+ height:60px;
+ line-height:60px;
+ padding:0 12px;
+ overflow:hidden
+}
+.AppChat .fancyHome .groupList .group.active,.AppChat .fancyHome .groupList .group:hover {
+ background:hsla(0,0%,100%,.08);
+ cursor:pointer
+}
+.AppChat .fancyHome .groupList .memberInfo {
+ display:inline-block;
+ font-size:13px
+}
+.AppChat .fancyHome .groupList .memberInfo .userName {
+ display:inline-block;
+ max-width:130px;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .groupList .memberInfo .userAvatar {
+ vertical-align:middle;
+ margin-right:8px
+}
+.AppChat .fancyHome .groupList .memberInfo .icon-chat-vip {
+ color:#f6bc2e;
+ -webkit-transform:scale(.8);
+ transform:scale(.8);
+ display:inline-block;
+ vertical-align:-1px
+}
+.AppChat .fancyHome .groupList .groupUserCount {
+ float:right;
+ color:#8d8e92;
+ display:inline-block;
+ width:25px;
+ height:60px;
+ text-align:right;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .groupList .groupUserCount em {
+ font-style:normal;
+ vertical-align:-4px
+}
+.AppChat .fancyHome .appList {
+ width:100%
+}
+.AppChat .fancyHome .appList .appItem {
+ padding:0 12px;
+ height:60px;
+ line-height:60px
+}
+.AppChat .fancyHome .appList .appItem.active,.AppChat .fancyHome .appList .appItem:hover {
+ background:hsla(0,0%,100%,.08);
+ cursor:pointer
+}
+.AppChat .fancyHome .appList .appItem .userAvatar {
+ width:38px;
+ height:38px;
+ overflow:hidden;
+ border-radius:50%;
+ vertical-align:middle;
+ font-size:24px;
+ text-align:center;
+ line-height:34px;
+ margin-right:8px
+}
+.AppChat .fancyHome .appList .appName {
+ color:#fff;
+ font-size:14px;
+ display:inline-block;
+ vertical-align:middle;
+ width:170px;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .caret {
+ width:10px;
+ height:10px;
+ border-style:solid;
+ border-width:5px 0 5px 8px;
+ border-left-color:#757575;
+ border-right-color:transparent!important;
+ border-bottom-color:transparent!important;
+ border-top-color:transparent!important;
+ transition:all .1s ease-out;
+ color:#e85c72
+}
+.AppChat .fancyHome .appList .userAvatar,.AppChat .fancyHome .sessionList .userAvatar {
+ position:relative
+}
+.AppChat .fancyHome .bellNoPush {
+ position:absolute;
+ right:16px;
+ top:61%;
+ font-size:13px;
+ display:none
+}
+.AppChat .fancyHome .panelList .dropmenu {
+ position:absolute;
+ right:12px;
+ top:0
+}
+.AppChat .fancyHome .panelList .dropmenu:after {
+ content:"\25BC";
+ display:inline-block;
+ font-size:12px
+}
+.AppChat .fancyHome .panelList .dropmenu:after .dropdownMenu {
+ width:200px
+}
+.AppChat .fancyHome .panelList .campany-item:hover {
+ background:red
+}
+.AppChat .fancyHome .panelList .list-tab {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ position:fixed;
+ width:250px;
+ border-bottom:1px solid;
+ box-shadow:none;
+ z-index:30
+}
+.AppChat .fancyHome .panelList .list-tab .tab-item {
+ -webkit-box-flex:1;
+ -ms-flex:1 0 auto;
+ flex:1 0 auto;
+ width:50%;
+ height:40px;
+ box-sizing:border-box;
+ font-size:13px;
+ line-height:40px;
+ cursor:pointer
+}
+.AppChat .fancyHome .panelList .list-tab .tab-item .content {
+ padding:0 20px 0 14px;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap;
+ cursor:default
+}
+.AppChat .fancyHome .panelList .list-tab .tab-item.active {
+ background:#5f9ea0
+}
+.AppChat .fancyHome .panelList .list-tab .tab-item .menu {
+ display:none
+}
+.AppChat .fancyHome .panelList .list-tab .tab-item.open {
+ min-height:200px
+}
+.AppChat .fancyHome .panelList .list-tab .tab-item.open .menu {
+ display:block;
+ position:absolute;
+ left:0;
+ border-bottom:1px solid #d4d4d4;
+ width:100%;
+ border-top:none;
+ background:#fff
+}
+.AppChat .fancyHome .panelList .list-tab .tab-item.open .dropmenu:after {
+ content:"\25B2"
+}
+.AppChat .fancyHome .panelList .list-tab .company-item {
+ line-height:17px;
+ padding:4px 14px
+}
+.AppChat .fancyHome .panelList .list-tab .company-item i {
+ font-size:16px;
+ margin-right:4px;
+ vertical-align:middle
+}
+.AppChat .fancyHome .panelList .list-container {
+ padding-top:41px
+}
+.AppChat .fancyHome .panelList .list-container .nano-content {
+ padding-top:40px
+}
+.AppChat .fancyHome .contact-item {
+ height:60px;
+ line-height:60px;
+ padding:0 12px;
+ overflow:hidden
+}
+.AppChat .fancyHome .contact-item .memberInfo {
+ display:inline-block;
+ font-size:13px
+}
+.AppChat .fancyHome .contact-item .avatar {
+ margin-right:8px;
+ display:inline-block;
+ border-radius:50%;
+ width:38px;
+ height:38px;
+ overflow:hidden;
+ vertical-align:middle
+}
+.AppChat .fancyHome .contact-item .name {
+ display:inline-block;
+ max-width:130px;
+ vertical-align:middle;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .contact-item .icon-chat-vip {
+ color:#f6bc2e;
+ -webkit-transform:scale(.8);
+ transform:scale(.8);
+ display:inline-block;
+ vertical-align:-1px
+}
+.AppChat .fancyHome .sessionItem {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-align:center;
+ -ms-flex-align:center;
+ align-items:center;
+ width:250px;
+ height:60px;
+ line-height:60px;
+ overflow:hidden;
+ position:relative;
+ color:#fff;
+ padding-left:16px;
+ padding-right:12px;
+ transition:-webkit-transform .3s ease-out;
+ transition:transform .3s ease-out;
+ transition:transform .3s ease-out,-webkit-transform .3s ease-out;
+ cursor:pointer
+}
+.AppChat .fancyHome .sessionItem:hover {
+ background:hsla(0,0%,100%,.08)
+}
+.AppChat .fancyHome .sessionItem.active,.AppChat .fancyHome .sessionItem.active:hover {
+ background:hsla(0,0%,100%,.2)
+}
+.AppChat .fancyHome .sessionItem:hover .btnDel {
+ display:block;
+ color:hsla(0,0%,100%,.3)
+}
+.AppChat .fancyHome .sessionItem.sessionItem--nopush .unreadTip {
+ width:10px;
+ height:10px;
+ text-indent:-9999px;
+ top:8px;
+ left:45px
+}
+.AppChat .fancyHome .sessionItem.sessionItem--nopush .bellNoPush {
+ display:block
+}
+.AppChat .fancyHome .sessionItem#st-mail .unreadTip {
+ width:10px;
+ height:10px;
+ text-indent:-9999px;
+ top:8px;
+ left:45px
+}
+.AppChat .fancyHome .sessionItem .no-radius {
+ border-radius:0!important
+}
+.AppChat .fancyHome .sessionItem .avatar {
+ margin-right:8px;
+ -webkit-box-flex:1;
+ -ms-flex:1 0 auto;
+ flex:1 0 auto;
+ border-radius:50%;
+ width:38px;
+ height:38px;
+ overflow:hidden;
+ vertical-align:middle
+}
+.AppChat .fancyHome .sessionItem .info {
+ width:176px;
+ -webkit-box-flex:1;
+ -ms-flex:1 1 auto;
+ flex:1 1 auto;
+ -webkit-box-align:center;
+ -ms-flex-align:center;
+ align-items:center;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -ms-flex-wrap:wrap;
+ flex-wrap:wrap;
+ line-height:132%;
+ height:42px
+}
+.AppChat .fancyHome .sessionItem .name {
+ -webkit-box-flex:1;
+ -ms-flex:1 0;
+ flex:1 0;
+ font-size:13px;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .sessionItem .msg {
+ -webkit-box-flex:0;
+ -ms-flex:0 0 auto;
+ flex:0 0 auto;
+ width:90%;
+ font-size:12px;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .sessionItem .msg .msg-at {
+ color:red;
+ margin-right:2px
+}
+.AppChat .fancyHome .sessionItem .date {
+ min-width:32px;
+ -webkit-box-flex:0;
+ -ms-flex:0 1 auto;
+ flex:0 1 auto;
+ font-size:12px
+}
+.AppChat .fancyHome .sessionItem .btnDel {
+ display:none;
+ width:10px;
+ height:10px;
+ line-height:10px;
+ position:absolute;
+ z-index:2;
+ left:3px;
+ top:50%;
+ margin-top:-5px;
+ -webkit-transform:scale(.8);
+ transform:scale(.8)
+}
+.AppChat .fancyHome .sessionItem .btnDel:hover {
+ color:hsla(0,0%,100%,.7)
+}
+.AppChat .fancyHome .sessionItem .btnDel i {
+ font-size:12px
+}
+.AppChat .fancyHome .sessionItem .unreadTip {
+ left:38px;
+ top:7%;
+ background:red
+}
+.AppChat .fancyHome .avatar {
+ position:relative
+}
+.AppChat .fancyHome .avatar>img {
+ width:100%;
+ height:100%
+}
+.AppChat .fancyHome .avatar-32 {
+ width:38px;
+ height:38px
+}
+.AppChat .fancyHome .avatar-40 {
+ width:40px;
+ height:40px
+}
+.AppChat .fancyHome .nano.department .packet-head {
+ cursor:pointer
+}
+.AppChat .fancyHome .drawerTitle {
+ padding:0 15px;
+ height:40px;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-align:center;
+ -ms-flex-align:center;
+ align-items:center;
+ cursor:pointer;
+ font-size:13px;
+ -webkit-box-pack:justify;
+ -ms-flex-pack:justify;
+ justify-content:space-between
+}
+.AppChat .fancyHome .drawerTitle .ghost-item {
+ width:0;
+ height:0;
+ overflow:hidden;
+ visibility:hidden;
+ -webkit-box-flex:1;
+ -ms-flex:1;
+ flex:1
+}
+.AppChat .fancyHome .drawerTitle:hover .drawerTitle-tip {
+ visibility:visible
+}
+.AppChat .fancyHome .drawerTitle.fixed-tip {
+ position:fixed;
+ display:none;
+ width:250px;
+ z-index:10;
+ box-shadow:none;
+ background:hsla(0,0%,100%,.7);
+ border-bottom:1px solid #efefef
+}
+.AppChat .fancyHome .drawerTitle.fixed-tip .drawerTitle-caret {
+ -webkit-transform:rotate(90deg);
+ transform:rotate(90deg)
+}
+.AppChat .fancyHome .drawerTitle-tip {
+ visibility:hidden
+}
+.AppChat .fancyHome .drawerTitle-tip.clipLoader {
+ visibility:visible;
+ width:20px;
+ height:20px;
+ margin-right:4px
+}
+.AppChat .fancyHome .drawerTitle-content {
+ max-width:120px;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .drawerTitle .icon-task-select-other,.AppChat .fancyHome .drawerTitle [class^=icon-chatnetwork-type] {
+ width:18px;
+ height:18px;
+ margin:-2px 0 0 5px;
+ font-size:18px;
+ overflow:hidden
+}
+.AppChat .fancyHome .drawerTitle .icon-task-select-other {
+ color:#617d8a
+}
+.AppChat .fancyHome .drawerTitle .icon-task-select-other:before {
+ display:inline-block;
+ height:20px
+}
+.AppChat .fancyHome .drawer {
+ overflow:hidden;
+ margin:2px 0 4px
+}
+.AppChat .fancyHome .drawer--expired .drawerBody {
+ opacity:.6
+}
+.AppChat .fancyHome .drawer.open .drawerTitle-caret {
+ -webkit-transform:rotate(90deg);
+ transform:rotate(90deg)
+}
+.AppChat .fancyHome .drawerBody {
+ overflow:hidden
+}
+.AppChat .fancyHome .drawerBody-item {
+ padding:0 12px 0 30px;
+ height:60px;
+ line-height:60px
+}
+.AppChat .fancyHome .subDrawer {
+ font-size:13px
+}
+.AppChat .fancyHome .subDrawer.open .subDrawerTitle-caret {
+ -webkit-transform:rotate(90deg);
+ transform:rotate(90deg)
+}
+.AppChat .fancyHome .subDrawer.open .subDrawerBody {
+ height:auto
+}
+.AppChat .fancyHome .subDrawerTitle {
+ padding:0 15px;
+ height:48px;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-align:center;
+ -ms-flex-align:center;
+ align-items:center;
+ cursor:pointer
+}
+.AppChat .fancyHome .subDrawerTitle.fixed-tip {
+ position:fixed;
+ display:none;
+ width:250px;
+ z-index:10;
+ box-shadow:none;
+ padding:8px 15px 4px;
+ border-bottom:1px solid
+}
+.AppChat .fancyHome .subDrawerTitle.fixed-tip .subDrawerTitle-caret {
+ -webkit-transform:rotate(90deg);
+ transform:rotate(90deg)
+}
+.AppChat .fancyHome .subDrawerTitle-content {
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap;
+ -webkit-box-flex:1;
+ -ms-flex:1 1 auto;
+ flex:1 1 auto
+}
+.AppChat .fancyHome .subDrawerTitle-count {
+ white-space:nowrap;
+ vertical-align:top;
+ font-size:12px;
+ text-align:right;
+ margin-left:6px
+}
+.AppChat .fancyHome .subDrawerTitle-caret {
+ width:10px;
+ height:10px;
+ border-style:solid;
+ border-width:5px 0 5px 8px;
+ border-left-color:#757575;
+ border-right-color:transparent!important;
+ border-bottom-color:transparent!important;
+ border-top-color:transparent!important;
+ transition:all .1s ease-out;
+ color:#e85c72;
+ margin-right:8px
+}
+.AppChat .fancyHome .subDrawerTitle span.title {
+ display:inline-block;
+ vertical-align:middle;
+ width:90%;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .subDrawerBody {
+ width:100%;
+ height:0;
+ overflow:hidden;
+ transition:all .2s ease-in-out
+}
+.AppChat .fancyHome .subDrawerBody-item {
+ padding:0 15px;
+ height:52px;
+ line-height:52px;
+ cursor:pointer
+}
+@-webkit-keyframes msgShining {
+ 0% {
+  background-color:#fff
+ }
+ to {
+  color:#fff
+ }
+}
+@keyframes msgShining {
+ 0% {
+  background-color:#fff
+ }
+ to {
+  color:#fff
+ }
+}
+.AppChat .fancyHome .msgContent.highlight {
+ -webkit-animation-name:msgShining;
+ animation-name:msgShining;
+ -webkit-animation-timing-function:linear;
+ animation-timing-function:linear;
+ -webkit-animation-duration:.3s;
+ animation-duration:.3s;
+ -webkit-animation-direction:alternate;
+ animation-direction:alternate;
+ -webkit-animation-iteration-count:4;
+ animation-iteration-count:4;
+ -webkit-animation-fill-mode:forwards;
+ animation-fill-mode:forwards
+}
+.AppChat .fancyHome .msgContent.highlight .reference-message-container {
+ color:inherit
+}
+.AppChat .fancyHome .msgContent.highlight:after {
+ -webkit-animation-name:msgShining;
+ animation-name:msgShining;
+ -webkit-animation-timing-function:linear;
+ animation-timing-function:linear;
+ -webkit-animation-duration:.3s;
+ animation-duration:.3s;
+ -webkit-animation-direction:alternate;
+ animation-direction:alternate;
+ -webkit-animation-iteration-count:4;
+ animation-iteration-count:4;
+ -webkit-animation-fill-mode:forwards;
+ animation-fill-mode:forwards
+}
+.AppChat .fancyHome .Message--duplicated .Message-container {
+ padding-left:70px;
+ margin-top:0
+}
+.AppChat .fancyHome .Message-container {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -ms-flex-wrap:wrap;
+ flex-wrap:wrap;
+ padding:4px 20px;
+ position:relative
+}
+.AppChat .fancyHome .Message-container.Message-containerHover,.AppChat .fancyHome .Message-container:hover {
+ background:#f5f5f5
+}
+.AppChat .fancyHome .Message-container.Message-containerHover .Message-toolbar-wrapper,.AppChat .fancyHome .Message-container:hover .Message-toolbar-wrapper {
+ display:block
+}
+.AppChat .fancyHome .Message-body {
+ -webkit-box-flex:1;
+ -ms-flex:1;
+ flex:1;
+ padding-right:40px
+}
+.AppChat .fancyHome .Message-from {
+ -webkit-box-flex:0;
+ -ms-flex:0 50px;
+ flex:0 50px;
+ width:50px;
+ height:36px
+}
+.AppChat .fancyHome .Message-from-avatar {
+ width:36px;
+ height:36px;
+ border-radius:50%
+}
+.AppChat .fancyHome .Message-from-name {
+ color:#333;
+ font-size:14px;
+ font-weight:bolder
+}
+.AppChat .fancyHome .Message-title {
+ margin-bottom:5px
+}
+.AppChat .fancyHome .Message-timestamp {
+ width:100%;
+ margin-top:20px;
+ margin-bottom:20px;
+ text-align:center
+}
+.AppChat .fancyHome .Message-timestamp-content {
+ display:inline-block;
+ font-size:12px;
+ color:#bbb;
+ padding:0 5px;
+ line-height:150%
+}
+.AppChat .fancyHome .Message-content {
+ font-size:14px;
+ color:#333;
+ line-height:18px
+}
+.AppChat .fancyHome .Message-content .text {
+ word-break:break-all
+}
+.AppChat .fancyHome .Message-content .image {
+ max-width:270px;
+ font-size:0;
+ line-height:0
+}
+.AppChat .fancyHome .Message-content .image .image-layer {
+ cursor:pointer;
+ max-width:270px;
+ border-radius:4px;
+ overflow:hidden;
+ border:1px solid #ccc
+}
+.AppChat .fancyHome .Message-content .image .image-layer.emotion {
+ cursor:auto;
+ border:none;
+ max-width:70px
+}
+.AppChat .fancyHome .Message-toolbar-wrapper {
+ position:absolute;
+ right:20px;
+ top:-20px;
+ display:none
+}
+.AppChat .fancyHome .Message-toolbar {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex
+}
+.AppChat .fancyHome .Message-toolbarItem {
+ width:30px;
+ height:30px;
+ line-height:34px;
+ margin:0 6px;
+ position:relative;
+ background:#fff;
+ border-radius:50%;
+ box-shadow:0 1px 4px 1px rgba(0,0,0,.15);
+ text-align:center
+}
+.AppChat .fancyHome .Message-toolbarItemBtn {
+ display:inline-block;
+ width:30px;
+ height:30px;
+ cursor:pointer
+}
+.AppChat .fancyHome .Message-toolbarItemBtn:not(:hover) {
+ color:#bbb!important
+}
+.AppChat .fancyHome .Message-toolbar .icon-more_horiz {
+ font-size:22px
+}
+.AppChat .fancyHome .Message-toolbar .icon-quote-left {
+ font-size:20px
+}
+.AppChat .fancyHome .Message-toolbar .icon-dynamic-empty {
+ font-size:18px
+}
+.AppChat .fancyHome .Message-toolbar .icon-download {
+ font-size:17px
+}
+.AppChat .fancyHome .Message-menuItem {
+ padding:8px 14px
+}
+.AppChat .fancyHome .Message-menuItem:hover {
+ background:#e0e0e0;
+ cursor:pointer
+}
+.AppChat .fancyHome .js-message-recall {
+ display:none
+}
+.AppChat .fancyHome .onLine-wrapper {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-align:center;
+ -ms-flex-align:center;
+ align-items:center
+}
+.AppChat .fancyHome .onLine-wrapper .retry-icon {
+ margin-left:20px
+}
+.AppChat .fancyHome .onLine-wrapper .icon-knowledge-message {
+ color:red;
+ font-size:20px;
+ cursor:pointer
+}
+.AppChat .fancyHome .Message-reference-container {
+ max-width:400px;
+ border-radius:5px;
+ background:hsla(0,0%,88%,.5);
+ padding:8px;
+ margin-bottom:2px;
+ cursor:pointer
+}
+.AppChat .fancyHome .Message-reference-container.withdrawContent {
+ width:110px;
+ cursor:inherit
+}
+.AppChat .fancyHome .Message-reference-container .text:not(:hover) {
+ color:#9e9e9e!important
+}
+.AppChat .fancyHome .Message-reference-container .content {
+ max-height:17px;
+ color:#9e9e9e;
+ font-size:14px;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ display:-webkit-box;
+ -webkit-line-clamp:1;
+ -webkit-box-orient:vertical
+}
+.AppChat .fancyHome .Message-reference-container .content i {
+ margin-right:5px
+}
+.AppChat .fancyHome .Message-sysType {
+ color:#bbb;
+ margin:20px 0;
+ text-align:center;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-pack:center;
+ -ms-flex-pack:center;
+ justify-content:center
+}
+.AppChat .fancyHome .Message-sysType-reduceIcon {
+ color:rgba(233,66,24,.5)
+}
+.AppChat .fancyHome .Message-sysType-icon {
+ font-size:16px;
+ line-height:15px;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-align:center;
+ -ms-flex-align:center;
+ align-items:center;
+ -webkit-box-orient:vertical;
+ -webkit-box-direction:normal;
+ -ms-flex-direction:column;
+ flex-direction:column
+}
+.AppChat .fancyHome .Message-sysType-text {
+ padding-left:5px;
+ max-width:400px
+}
+.AppChat .fancyHome .Message-unreadLine {
+ margin:25px 0 20px
+}
+.AppChat .fancyHome .Message-unreadLine:before {
+ content:"";
+ display:block;
+ border-bottom:1px solid #efefef;
+ width:100%;
+ margin-bottom:-10px
+}
+.AppChat .fancyHome .Message-unreadLineTxt {
+ margin:0 auto;
+ display:block;
+ width:96px;
+ background:#fff;
+ color:#bbb;
+ text-align:center
+}
+.AppChat .fancyHome .msgItem.pic.msgCard .msgContainer {
+ border-radius:6px
+}
+.AppChat .fancyHome .msgItem.pic.msgCard .msgContainer .msgWrapper:after {
+ display:none
+}
+.AppChat .fancyHome .msgItem.pic.msgCard .msgContainer .msgWrapper .msgContent {
+ overflow:hidden;
+ font-size:0;
+ z-index:2;
+ border-radius:6px
+}
+.AppChat .fancyHome .msgItem.pic.msgCard .msgContainer .msgWrapper .msgContent .msgCard {
+ border-radius:6px
+}
+.AppChat .fancyHome .msgItem.pic.msgCard .msgContainer .msgWrapper .msgContent .msgCard .cardBody {
+ text-align:center;
+ padding:0;
+ border-radius:6px
+}
+.AppChat .fancyHome .msgItem.pic.msgCard .msgContainer .msgWrapper .msgContent img {
+ font-size:0;
+ cursor:pointer
+}
+.AppChat .fancyHome .msgItem.pic.small.msgCard .msgContainer .msgWrapper .msgContent .msgCard .cardBody {
+ padding:10px 0
+}
+.AppChat .fancyHome .msgItem.emotion {
+ font-family:inherit
+}
+.AppChat .fancyHome .msgItem.emotion img {
+ border-radius:6px;
+ display:block;
+ max-width:100px
+}
+.AppChat .fancyHome .msgItem.emotion .msgContent {
+ border:0;
+ background:none;
+ box-shadow:none
+}
+.AppChat .fancyHome .msgItem.emotion .msgWrapper:after {
+ display:none
+}
+.AppChat .fancyHome .Message .knowledge-image {
+ position:relative;
+ width:160px;
+ in-height:100px;
+ background-color:#fafafa
+}
+.AppChat .fancyHome .Message .knowledge-image .icon-wrapper {
+ position:absolute;
+ right:0;
+ top:0;
+ padding:2px 1px 2px 2px;
+ border-radius:4px;
+ background-color:rgba(50,50,50,.3)
+}
+.AppChat .fancyHome .Message .knowledge-image .icon {
+ color:#fff;
+ font-size:14px;
+ cursor:pointer
+}
+.AppChat .fancyHome .Message .knowledge-image img {
+ width:100%
+}
+.AppChat .fancyHome .Message .knowledge-file-layer .fileIcon i {
+ width:36px;
+ height:40px
+}
+.AppChat .fancyHome .Message .knowledge-file-layer .row {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex
+}
+.AppChat .fancyHome .Message .knowledge-file-layer .row .from {
+ margin-right:10px
+}
+.AppChat .fancyHome .Message .file-layer {
+ width:300px;
+ padding:10px;
+ background:#fff;
+ border:1px solid #ccc;
+ border-radius:5px;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ cursor:pointer
+}
+.AppChat .fancyHome .Message .file-layer .fileIcon {
+ display:inline-block
+}
+.AppChat .fancyHome .Message .file-layer .fileIcon i {
+ color:#b0b7bd;
+ font-size:42px;
+ vertical-align:middle
+}
+.AppChat .fancyHome .Message .file-layer .fileInfo {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-orient:vertical;
+ -webkit-box-direction:normal;
+ -ms-flex-direction:column;
+ flex-direction:column;
+ -ms-flex-pack:distribute;
+ justify-content:space-around;
+ margin-left:10px;
+ font-size:12px;
+ width:190px;
+ color:#c4c4c4
+}
+.AppChat .fancyHome .Message .file-layer .fileInfo .fileName {
+ color:#333;
+ font-size:14px;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .Message .file-layer .fileInfo .fileSize {
+ font-style:normal
+}
+.AppChat .fancyHome .Message .file-layer .fileInfo .btnDownload {
+ color:inherit;
+ margin-left:10px;
+ text-decoration:none
+}
+.AppChat .fancyHome .Message .file-layer .fileInfo .progress {
+ display:inline-block;
+ width:100%;
+ height:4px;
+ margin-top:4px;
+ background:#d6d6d6
+}
+.AppChat .fancyHome .Message .file-layer .fileInfo .progress .progressBar {
+ background:#3db155;
+ height:100%;
+ width:0;
+ vertical-align:middle
+}
+.AppChat .fancyHome .Message .file-layer .fileInfo .uploadRate {
+ margin-left:15px
+}
+.AppChat .fancyHome .Message .file-layer .fileInfo .errorTip {
+ color:#e94218
+}
+.AppChat .fancyHome .Message .file-layer .fileAction {
+ display:inline-block;
+ vertical-align:middle;
+ margin-left:10px
+}
+.AppChat .fancyHome .Message .file-layer .fileAction .btn {
+ padding-left:5px;
+ padding-right:6px;
+ color:rgba(48,53,58,.43)
+}
+.AppChat .fancyHome .MessageAudio-wrapper {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-align:center;
+ -ms-flex-align:center;
+ align-items:center
+}
+.AppChat .fancyHome .MessageAudio-content {
+ cursor:pointer;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -ms-flex-line-pack:center;
+ align-content:center;
+ padding:5px 10px;
+ border:1px solid #ccc;
+ border-radius:4px;
+ width:150px;
+ -webkit-box-pack:justify;
+ -ms-flex-pack:justify;
+ justify-content:space-between;
+ background-color:#fff
+}
+.AppChat .fancyHome .MessageAudio-icon {
+ display:block;
+ width:18px;
+ height:18px;
+ background-size:contain;
+ background-repeat:no-repeat;
+ background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAkCAYAAACaJFpUAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAADxklEQVRIx62Xa4hVVRTHf/d0R5vpoZg1RckYKfgIsgdlmUT8Bz+lFEIUyBR9qBSbEJG0oqDSHtpU1Leil2AvKrKyiBZexCIETUsFLerDaFJ+aEi5M+Udpw9n71x3c+fcGO+CC+u//2ud/757n73WPiVaYGZ2EWDAdGAD8LCkkUaxWSsEgYXATKAMrAZeGS2wVYLbgarDy8xsdaPAUosEMbMe4C03NAx0S6qclqCZnQmsBNqBDZIGHPci8KAL7wdmSToeB8aypOuAp4BHgIqZTXLcKmCbw1OAJ3zyWAQnOv8K4CMzGwcg6QRwOzDgYpaZ2ZTTEXwUOOTwTcD6CCT9Djzu+PEhB2iyh2Y2GbgeqEg65sbnAN8AHWFoJNfS1sCXgT3ArMCfAC6T1J8ViE0EdgObgR/NLCYjaTew1IWXgD4zywJfAx5zfBvQ02xJLwAuDn4XsMXMznOibwNbXPwcYJHDnyRLv6RQUNJB4DU31AU8n4Q9BJx0eLnLrwEfOG6GmV3d7KVZAfzkcI+ZXeMeuhf40vE3h7oa7bPked2FguHA3uOGSkBvEva68zOg2+HvgJrDTf8hkraTd4Joi+O5C/YVeRmLdqPLrSYrNL1sZu3AWuA+8v34EHjAHwNgI6DgdwBXhdkj6ZiZ9QNTA395MuefyTsJQGcGbAp71QGcDdwFvJEkVRI8O8G/Of/ChPMTPysDbmmwkreFwxvtcLIXk5L4Aed3JNxx55+bAX81EBwKr3W0k9RXpTOSeN/d0+rl95cM+LyB4McJnpqI/JHw450/WMANlYF7w5ItDrN5F3g6SVqQ4AMNJhTtUMJ1Or9aljQErAm/0ex+5/8J7IjAzDqBaY7fk+TOcP7hpufQzG4l73vR3gt9L9rCJMVPZkLy778vFDSz84GX3VANeC4Ju9v5w8AXDs+jfu+3FbWnDHgHuMQN90n61cXcEB4arSLpqMOLksduLfqH13KqugD8gOvkZlYCnklyXnD8OPIXMdoBSb8UCe7l1Nu4D1gQXrBovcB8h3dS3x/vACY7vBGaXzHagSuBXV7MzOYDXwOxiNeA6yTtCnwZ2E9+9Qf4G7hU0pFykaCkQeDbZBKdwPtODGBtFAu21IkBvCrpCIzt1raS+gK9GXjSTaiLvPtEG8QVkrEI+mJcAe6UNBzE2sgr1TkuZr2k/7pJ+f8oJLaO/ArfBrwp6R/HvQTMdXg/SZls5cfMCqDPDVWBeeFK2VpBM5tL/skWq8oIsETSpjS2Vd+HM6kvYWsaibVS8FPyg18FeiU9O1rgvzRrIy1qRLMuAAAAAElFTkSuQmCC)
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min--moz-device-pixel-ratio:2),only screen and (min-device-pixel-ratio:2),only screen and (min-resolution:2dppx),only screen and (min-resolution:192dpi) {
+ .AppChat .fancyHome .MessageAudio-icon {
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAkCAYAAACaJFpUAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAADxklEQVRIx62Xa4hVVRTHf/d0R5vpoZg1RckYKfgIsgdlmUT8Bz+lFEIUyBR9qBSbEJG0oqDSHtpU1Leil2AvKrKyiBZexCIETUsFLerDaFJ+aEi5M+Udpw9n71x3c+fcGO+CC+u//2ud/757n73WPiVaYGZ2EWDAdGAD8LCkkUaxWSsEgYXATKAMrAZeGS2wVYLbgarDy8xsdaPAUosEMbMe4C03NAx0S6qclqCZnQmsBNqBDZIGHPci8KAL7wdmSToeB8aypOuAp4BHgIqZTXLcKmCbw1OAJ3zyWAQnOv8K4CMzGwcg6QRwOzDgYpaZ2ZTTEXwUOOTwTcD6CCT9Djzu+PEhB2iyh2Y2GbgeqEg65sbnAN8AHWFoJNfS1sCXgT3ArMCfAC6T1J8ViE0EdgObgR/NLCYjaTew1IWXgD4zywJfAx5zfBvQ02xJLwAuDn4XsMXMznOibwNbXPwcYJHDnyRLv6RQUNJB4DU31AU8n4Q9BJx0eLnLrwEfOG6GmV3d7KVZAfzkcI+ZXeMeuhf40vE3h7oa7bPked2FguHA3uOGSkBvEva68zOg2+HvgJrDTf8hkraTd4Joi+O5C/YVeRmLdqPLrSYrNL1sZu3AWuA+8v34EHjAHwNgI6DgdwBXhdkj6ZiZ9QNTA395MuefyTsJQGcGbAp71QGcDdwFvJEkVRI8O8G/Of/ChPMTPysDbmmwkreFwxvtcLIXk5L4Aed3JNxx55+bAX81EBwKr3W0k9RXpTOSeN/d0+rl95cM+LyB4McJnpqI/JHw450/WMANlYF7w5ItDrN5F3g6SVqQ4AMNJhTtUMJ1Or9aljQErAm/0ex+5/8J7IjAzDqBaY7fk+TOcP7hpufQzG4l73vR3gt9L9rCJMVPZkLy778vFDSz84GX3VANeC4Ju9v5w8AXDs+jfu+3FbWnDHgHuMQN90n61cXcEB4arSLpqMOLksduLfqH13KqugD8gOvkZlYCnklyXnD8OPIXMdoBSb8UCe7l1Nu4D1gQXrBovcB8h3dS3x/vACY7vBGaXzHagSuBXV7MzOYDXwOxiNeA6yTtCnwZ2E9+9Qf4G7hU0pFykaCkQeDbZBKdwPtODGBtFAu21IkBvCrpCIzt1raS+gK9GXjSTaiLvPtEG8QVkrEI+mJcAe6UNBzE2sgr1TkuZr2k/7pJ+f8oJLaO/ArfBrwp6R/HvQTMdXg/SZls5cfMCqDPDVWBeeFK2VpBM5tL/skWq8oIsETSpjS2Vd+HM6kvYWsaibVS8FPyg18FeiU9O1rgvzRrIy1qRLMuAAAAAElFTkSuQmCC);
+  background-size:18px 18px
+ }
+}
+.AppChat .fancyHome .MessageAudio-unread {
+ width:8px;
+ height:8px;
+ background:red;
+ border-radius:50%;
+ margin-left:8px
+}
+.AppChat .fancyHome .audioPlaying .MessageAudio-icon {
+ margin-left:-1px;
+ background-image:url(data:image/gif;base64,R0lGODlhIAAkAOZ/AE2h7L3c+Nra2nC08OXy/IG98pnJ9GOt7+Xl5c7OztTU1ODg4Orq6i2R6UWd7FGk7crKyl6r7pLG9O72/fT09LHW99zc3K7U90qg7G2z8D6a69LS0qLP9dXp+6rT9ur0/czk+jWV6snj+Wmw73i48UKc6/L4/pXI9DOU6jGT6i6S6Y3D81up7obA8sHe+YO/8ny68TiX6r6+vv7+/v39/cDAwPn5+fz8/L+/v8fHx8jIyNjY2MnJyefn5/r6+tDQ0Pf398XFxfj8/tfX18PDw83Nzfr8/vz9/+Pj49/f3+bm5t7e3sTExO7u7tnZ2f3+/8HBwcbGxtbW1szMzMLCwvv7+/T5/vLy8onB8+z1/fb29vHx8dDn+vj4+Hq58fj7/uzs7PDw8PX6/tHR0eLi4vPz84/E8/v9/+/v78/m+jqY6+jo6OPw/Nzt+3e48X688p7M9d/u/Nfq+/f7/rrb+FWm7c7l+u/3/azT9qTQ9pvL9drs+2Su7yuQ6b29vf///yH/C05FVFNDQVBFMi4wAwEAAAAh/wtYTVAgRGF0YVhNUDw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOklu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)
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min--moz-device-pixel-ratio:2),only screen and (min-device-pixel-ratio:2),only screen and (min-resolution:2dppx),only screen and (min-resolution:192dpi) {
+ .AppChat .fancyHome .audioPlaying .MessageAudio-icon {
+  background-image:url(data:image/gif;base64,R0lGODlhIAAkAOZ/AE2h7L3c+Nra2nC08OXy/IG98pnJ9GOt7+Xl5c7OztTU1ODg4Orq6i2R6UWd7FGk7crKyl6r7pLG9O72/fT09LHW99zc3K7U90qg7G2z8D6a69LS0qLP9dXp+6rT9ur0/czk+jWV6snj+Wmw73i48UKc6/L4/pXI9DOU6jGT6i6S6Y3D81up7obA8sHe+YO/8ny68TiX6r6+vv7+/v39/cDAwPn5+fz8/L+/v8fHx8jIyNjY2MnJyefn5/r6+tDQ0Pf398XFxfj8/tfX18PDw83Nzfr8/vz9/+Pj49/f3+bm5t7e3sTExO7u7tnZ2f3+/8HBwcbGxtbW1szMzMLCwvv7+/T5/vLy8onB8+z1/fb29vHx8dDn+vj4+Hq58fj7/uzs7PDw8PX6/tHR0eLi4vPz84/E8/v9/+/v78/m+jqY6+jo6OPw/Nzt+3e48X688p7M9d/u/Nfq+/f7/rrb+FWm7c7l+u/3/azT9qTQ9pvL9drs+2Su7yuQ6b29vf///yH/C05FVFNDQVBFMi4wAwEAAAAh/wtYTVAgRGF0YVhNUDw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOklu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);
+  background-size:18px 18px
+ }
+}
+.AppChat .fancyHome .notification {
+ text-align:center;
+ margin:0 18%
+}
+.AppChat .fancyHome .notification .notifyWrapper {
+ position:relative;
+ display:inline-block;
+ margin:10px 20px
+}
+.AppChat .fancyHome .notification .notifyWrapper .notificationIcon {
+ position:absolute;
+ width:30px;
+ text-align:center;
+ left:0;
+ top:0;
+ line-height:1;
+ color:#bbb;
+ font-size:16px
+}
+.AppChat .fancyHome .notification .notifyWrapper .notifyContent {
+ font-size:12px;
+ color:#bbb;
+ text-align:left;
+ padding-left:30px;
+ padding-right:5px
+}
+.AppChat .fancyHome .notification .notifyWrapper .notifyContent p {
+ margin-top:0;
+ margin-bottom:10px
+}
+.AppChat .fancyHome .notification .msgDate {
+ margin-bottom:20px
+}
+.AppChat .fancyHome .notification.notificationDate {
+ font-size:12px
+}
+.AppChat .fancyHome .notification.notificationDate .notifyWrapper {
+ padding:3px 10px;
+ background:#f1f1f1;
+ color:#999
+}
+.AppChat .fancyHome .notification.error .notifyWrapper .notificationIcon i {
+ color:rgba(233,66,24,.5)
+}
+.AppChat .fancyHome .floatMsg {
+ position:absolute;
+ background:#007ddb;
+ background:rgba(0,136,255,.8);
+ height:40px;
+ line-height:40px;
+ bottom:0;
+ left:0;
+ width:100%;
+ color:#fff;
+ padding:0 10px;
+ cursor:pointer;
+ font-size:14px;
+ z-index:5;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .floatMsg .userAvatar {
+ vertical-align:middle;
+ margin-right:10px;
+ float:left;
+ margin-top:5px;
+ width:30px;
+ height:30px
+}
+.AppChat .fancyHome .floatMsg .floatMsgContent {
+ vertical-align:middle;
+ float:left;
+ max-width:81%;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .floatMsg .floatMsgCount {
+ float:right
+}
+.AppChat .fancyHome .floatMsg .floatMsgContent img {
+ vertical-align:middle
+}
+.AppChat .fancyHome .msgPanel {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-flex:1;
+ -ms-flex:1;
+ flex:1;
+ position:relative
+}
+.AppChat .fancyHome .msgPanel .msgList {
+ padding-bottom:10px
+}
+.AppChat .fancyHome .msgPanel>div.nano {
+ height:auto;
+ position:absolute;
+ top:0;
+ bottom:10px;
+ left:0;
+ right:0
+}
+.AppChat .fancyHome .msgPanel .hasMore {
+ display:block;
+ width:100px;
+ text-align:center;
+ margin:15px auto;
+ color:#007ddb;
+ cursor:pointer
+}
+.AppChat .fancyHome .msgPanel .noMoreTip {
+ text-align:center;
+ color:#999;
+ margin-bottom:20px;
+ margin-top:20px
+}
+.AppChat .fancyHome .msgPanel .noMoreTip[disabled=disabled] {
+ cursor:default
+}
+.AppChat .fancyHome .msgPanel .msgSeparator {
+ margin:30px 0;
+ text-align:center
+}
+.AppChat .fancyHome .msgPanel .msgSeparator .separatorWrapper {
+ display:inline-block;
+ width:190px
+}
+.AppChat .fancyHome .msgPanel .msgSeparator .separatorWrapper hr {
+ margin-top:0;
+ margin-bottom:-9px;
+ border:0;
+ border-top:1px solid #bbb
+}
+.AppChat .fancyHome .msgPanel .msgSeparator .separatorWrapper .text {
+ display:inline-block;
+ color:#bbb;
+ padding:0 10px;
+ background:#fff
+}
+.AppChat .fancyHome .msgPanel .toBottom {
+ position:absolute;
+ bottom:5px;
+ right:10px;
+ font-size:17px;
+ text-align:center;
+ cursor:pointer;
+ background-color:#fff;
+ border-radius:50%;
+ z-index:4;
+ width:30px;
+ height:30px;
+ line-height:30px;
+ box-shadow:0 1px 4px 1px rgba(0,0,0,.15)
+}
+.AppChat .fancyHome .msgPanel .toBottom:not(:hover) {
+ color:#ccc!important
+}
+.AppChat .fancyHome .msgItem.MessageCard {
+ border-radius:6px
+}
+.AppChat .fancyHome .msgItem.MessageCard .msgWrapper {
+ width:400px;
+ cursor:pointer
+}
+.AppChat .fancyHome .msgItem.MessageCard .msgWrapper:hover .msgContent {
+ box-shadow:0 2px 8px 0 rgba(0,0,0,.25)
+}
+.AppChat .fancyHome .msgItem.MessageCard .msgWrapper:after {
+ background:#fff
+}
+.AppChat .fancyHome .msgItem.MessageCard .msgWrapper .TxtCenter {
+ position:absolute;
+ background:#fff;
+ left:1px;
+ top:0;
+ bottom:0;
+ right:1px;
+ width:auto;
+ padding:47px
+}
+.AppChat .fancyHome .Message-card {
+ width:400px;
+ background:#fff;
+ border:1px solid #ccc;
+ border-radius:10px;
+ transition:all .3s;
+ cursor:pointer
+}
+.AppChat .fancyHome .Message-card:hover {
+ box-shadow:0 2px 8px 0 rgba(0,0,0,.25)
+}
+.AppChat .fancyHome .Message-card--moreInfo .Message-cardDetail {
+ display:block
+}
+.AppChat .fancyHome .Message-card--moreInfo .Message-voteInfo {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ font-size:12px;
+ margin-top:5px
+}
+.AppChat .fancyHome .Message-card--moreInfo .Message-voteInfo .messageCardVoteStatus {
+ margin-right:5px
+}
+.AppChat .fancyHome .Message-cardHeader {
+ height:36px;
+ padding:15px 20px 0;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-align:center;
+ -ms-flex-align:center;
+ align-items:center;
+ color:#999;
+ font-size:14px
+}
+.AppChat .fancyHome .Message-cardHeader i {
+ margin-right:4px;
+ font-size:16px
+}
+.AppChat .fancyHome .Message-cardHeader .icon-chat-clip {
+ margin-left:5px
+}
+.AppChat .fancyHome .Message-cardHeader-title {
+ font-weight:600;
+ color:#333;
+ font-size:15px;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap;
+ -webkit-box-flex:1;
+ -ms-flex:1;
+ flex:1
+}
+.AppChat .fancyHome .Message-cardHeader-icon {
+ width:50px;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-orient:horizontal;
+ -webkit-box-direction:normal;
+ -ms-flex-direction:row;
+ flex-direction:row;
+ -webkit-box-align:end;
+ -ms-flex-align:end;
+ align-items:flex-end;
+ -webkit-box-pack:end;
+ -ms-flex-pack:end;
+ justify-content:flex-end
+}
+.AppChat .fancyHome .Message-cardBody {
+ padding:0 20px 15px
+}
+.AppChat .fancyHome .Message-cardTitle {
+ font-size:18px;
+ padding-top:16px
+}
+.AppChat .fancyHome .Message-cardTitle--calendar,.AppChat .fancyHome .Message-cardTitle--task {
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .Message-cardTitle--vote {
+ font-size:13px
+}
+.AppChat .fancyHome .Message-cardDetail {
+ display:none
+}
+.AppChat .fancyHome .Message-cardDetailItem {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ padding:10px 0 0
+}
+.AppChat .fancyHome .Message-cardDetail-members,.AppChat .fancyHome .Message-cardDetail-membersItem {
+ -webkit-box-align:center;
+ -ms-flex-align:center;
+ align-items:center
+}
+.AppChat .fancyHome .Message-cardDetail-members {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex
+}
+.AppChat .fancyHome .Message-cardDetail-postDetail {
+ overflow:hidden;
+ text-overflow:ellipsis;
+ display:-webkit-box;
+ -webkit-line-clamp:3;
+ -webkit-box-orient:vertical;
+ padding-top:10px;
+ line-height:1.4
+}
+.AppChat .fancyHome .Message-cardDetail-postSummary {
+ overflow:hidden;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ padding-top:0;
+ line-height:1.5
+}
+.AppChat .fancyHome .Message-cardDetail-postSummary,.AppChat .fancyHome .Message-cardDetail-voteOptions {
+ -webkit-box-orient:vertical;
+ -webkit-box-direction:normal;
+ -ms-flex-direction:column;
+ flex-direction:column
+}
+.AppChat .fancyHome .Message-cardDetail-voteOptions-item {
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .Message-cardDetail-voteOptions-itemInput {
+ padding-left:24px;
+ display:block;
+ height:24px;
+ position:relative
+}
+.AppChat .fancyHome .Message-cardDetail-voteOptions-itemInput:before {
+ content:"";
+ display:inline-block;
+ width:14px;
+ height:14px;
+ border:1px solid #bbb;
+ position:absolute;
+ left:0;
+ top:0
+}
+.AppChat .fancyHome .Avatar-size24 {
+ width:28px;
+ height:28px;
+ overflow:hidden;
+ padding:2px;
+ background:#fff;
+ display:inline-block;
+ border-radius:50%;
+ margin-right:26px
+}
+.AppChat .fancyHome .Avatar-size24~.Avatar-size24 {
+ margin-right:0;
+ margin-left:-10px
+}
+.AppChat .fancyHome .Avatar-size24 .AvatarImages {
+ width:24px;
+ height:24px;
+ border-radius:50%
+}
+.AppChat .fancyHome .Message-cardDetail-membersCount {
+ width:28px;
+ height:28px;
+ overflow:hidden;
+ padding:2px;
+ background:#fff;
+ display:inline-block;
+ border-radius:50%;
+ margin-right:0;
+ margin-left:-10px
+}
+.AppChat .fancyHome .Message-cardDetail-membersCountText {
+ display:inline-block;
+ width:24px;
+ height:24px;
+ line-height:26px;
+ border-radius:50%;
+ color:#fff;
+ background-color:#a7a7a7;
+ font-size:13px;
+ text-align:center
+}
+.AppChat .fancyHome .msgItem.MessageCard .MessageCardMoreInfo .MessageCardFooter {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex
+}
+.AppChat .fancyHome .msgItem.MessageCard .MessageCardMoreInfo .MessageCard-detail {
+ display:block
+}
+.AppChat .fancyHome .msgItem.MessageCard .msgContent {
+ transition:all .3s;
+ border-radius:6px;
+ width:100%;
+ background:#fff;
+ font-size:13px;
+ padding-bottom:16px
+}
+.AppChat .fancyHome .msgItem.MessageCard .msgContent .msgCard {
+ background:#fff;
+ border-radius:6px
+}
+.AppChat .fancyHome .msgItem.MessageCard .msgContent .msgCard .msgTitle {
+ color:#000;
+ padding:11px;
+ font-size:12px;
+ line-height:100%
+}
+.AppChat .fancyHome .msgItem.MessageCard .msgContent .cardBody {
+ padding:10px;
+ width:310px;
+ border-radius:6px;
+ transition:box-shadow .3s;
+ cursor:pointer;
+ position:relative
+}
+.AppChat .fancyHome .groupAction {
+ position:absolute;
+ bottom:0;
+ width:100%;
+ height:50px;
+ line-height:50px;
+ z-index:2
+}
+.AppChat .fancyHome .groupAction .btnNewGroup {
+ cursor:pointer
+}
+.AppChat .fancyHome .groupAction .btnNewGroup i {
+ vertical-align:0
+}
+.AppChat .fancyHome .groupAction .dropdown {
+ position:relative;
+ width:200px;
+ text-align:center;
+ margin:7px auto 0
+}
+.AppChat .fancyHome .groupAction .dropdown .btnDropdown {
+ display:inline-block;
+ width:36px;
+ height:36px;
+ border-radius:50%;
+ cursor:pointer;
+ transition:all .3s ease .2s
+}
+.AppChat .fancyHome .groupAction .dropdown .btnDropdown.rotate45 {
+ -webkit-transform:rotate(45deg);
+ transform:rotate(45deg)
+}
+.AppChat .fancyHome .groupAction .dropdown .btnDropdown i {
+ font-size:20px;
+ vertical-align:5px
+}
+.AppChat .fancyHome .groupAction .dropdown .btnDropdown .after,.AppChat .fancyHome .groupAction .dropdown .btnDropdown .before {
+ display:block;
+ content:"";
+ height:2px;
+ width:100%;
+ background:#fff;
+ -webkit-transform-origin:50% 50%;
+ transform-origin:50% 50%;
+ transition:all .3s;
+ margin-top:7px
+}
+.AppChat .fancyHome .groupAction .dropdown .btnDropdown .after {
+ -webkit-transform:rotate(90deg);
+ transform:rotate(90deg);
+ margin-top:-2px
+}
+.AppChat .fancyHome .groupAction .dropdown .btnDropdown .before {
+ -webkit-transform:rotate(0deg);
+ transform:rotate(0deg)
+}
+.AppChat .fancyHome .groupAction .dropdown .btnDropdown:hover {
+ background-color:#707070
+}
+.AppChat .fancyHome .groupAction .dropdown .dropdownList {
+ display:none;
+ position:absolute;
+ width:100%;
+ left:0;
+ bottom:100%;
+ transition:all .2s .2s;
+ opacity:0;
+ -webkit-transform:translateY(-20%);
+ transform:translateY(-20%);
+ color:#666;
+ padding:6px 0;
+ border-radius:3px;
+ background:#fff;
+ border:1px solid #ccc;
+ text-align:left;
+ margin-bottom:20px;
+ box-shadow:0 4px 23px 5px rgba(0,0,0,.2),0 2px 6px rgba(0,0,0,.15)
+}
+.AppChat .fancyHome .groupAction .dropdown .dropdownList li {
+ line-height:40px;
+ padding:0 10px;
+ font-size:13px
+}
+.AppChat .fancyHome .groupAction .dropdown .dropdownList li a {
+ color:#666
+}
+.AppChat .fancyHome .groupAction .dropdown .dropdownList li a,.AppChat .fancyHome .groupAction .dropdown .dropdownList li span {
+ display:block;
+ cursor:pointer
+}
+.AppChat .fancyHome .groupAction .dropdown .dropdownList li i {
+ margin-left:8px;
+ font-size:20px;
+ margin-right:10px
+}
+.AppChat .fancyHome .groupAction .dropdown .dropdownList li i.icon-chat-message {
+ margin-right:13px;
+ font-size:17px
+}
+.AppChat .fancyHome .groupAction .dropdown .dropdownList li:hover {
+ background:#e5e5e5
+}
+.AppChat .fancyHome .groupAction .dropdown .dropdownList li:hover a {
+ text-decoration:none
+}
+.AppChat .fancyHome .groupAction .dropdown.dropdownOpen .btnDropdown {
+ background-color:#707070
+}
+.AppChat .fancyHome .groupAction .dropdown.dropdownOpen .btnDropdown .after {
+ -webkit-transform:rotate(-45deg);
+ transform:rotate(-45deg)
+}
+.AppChat .fancyHome .groupAction .dropdown.dropdownOpen .btnDropdown .before {
+ -webkit-transform:rotate(45deg);
+ transform:rotate(45deg)
+}
+.AppChat .fancyHome .groupAction .dropdown.dropdownOpen .dropdownList {
+ display:block;
+ opacity:1;
+ -webkit-transform:translate(0);
+ transform:translate(0)
+}
+.AppChat .fancyHome #overlay {
+ opacity:.5!important
+}
+.AppChat .fancyHome #search {
+ width:100%;
+ height:40px;
+ padding:7px 33px 7px 40px;
+ font-size:12px;
+ line-height:25px;
+ outline:0;
+ border:0;
+ background:#2e343c;
+ color:#fff;
+ border-radius:5px;
+ border-bottom-style:solid;
+ border-bottom-width:1px;
+ transition:all .15s ease-in
+}
+.AppChat .fancyHome .searchBox {
+ margin:8px 15px 0;
+ position:relative
+}
+.AppChat .fancyHome .searchBox i {
+ font-size:18px
+}
+.AppChat .fancyHome .searchBox label {
+ position:absolute;
+ left:8px;
+ top:9px;
+ line-height:0;
+ font-size:20px;
+ color:#92969d;
+ transition:all .3s
+}
+.AppChat .fancyHome .searchBox label .placeholder {
+ vertical-align:middle
+}
+.AppChat .fancyHome .searchBox .btnCancel {
+ display:none;
+ position:absolute;
+ right:10px;
+ top:9px;
+ color:#8a8a8a;
+ cursor:pointer
+}
+.AppChat .fancyHome .searchBox .searchResult {
+ position:absolute;
+ top:100%;
+ left:0;
+ width:280px;
+ border-radius:3px;
+ box-shadow:0 4px 23px 5px rgba(0,0,0,.2),0 2px 6px rgba(0,0,0,.15);
+ background:#fff;
+ z-index:99;
+ margin-top:5px;
+ padding-bottom:10px
+}
+.AppChat .fancyHome .searchBox .searchResult .searchItemTitle,.AppChat .fancyHome .searchBox .searchResult .userItem {
+ padding:0 0 0 17px
+}
+.AppChat .fancyHome .searchBox .searchResult .userItem .userDepartment,.AppChat .fancyHome .searchBox .searchResult .userItem .userName {
+ display:inline-block;
+ vertical-align:top;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .searchBox .searchResult .userItem .userAvatar {
+ vertical-align:-12px;
+ width:32px;
+ height:32px
+}
+.AppChat .fancyHome .searchBox .searchResult .userItem .userName {
+ width:75px;
+ color:#0e050a;
+ font-size:13px
+}
+.AppChat .fancyHome .searchBox .searchResult .userItem .groupCount,.AppChat .fancyHome .searchBox .searchResult .userItem .userDepartment {
+ width:120px;
+ margin-left:25px;
+ color:rgba(0,0,0,.54)
+}
+.AppChat .fancyHome .searchBox .searchResult .userItem.active,.AppChat .fancyHome .searchBox .searchResult .userItem:hover {
+ background:#007ddb
+}
+.AppChat .fancyHome .searchBox .searchResult .userItem.active .groupCount,.AppChat .fancyHome .searchBox .searchResult .userItem.active .userDepartment,.AppChat .fancyHome .searchBox .searchResult .userItem.active .userName,.AppChat .fancyHome .searchBox .searchResult .userItem:hover .groupCount,.AppChat .fancyHome .searchBox .searchResult .userItem:hover .userDepartment,.AppChat .fancyHome .searchBox .searchResult .userItem:hover .userName {
+ color:#fff
+}
+.AppChat .fancyHome .searchBox .searchResult .users+.groups {
+ border-top:1px solid #e0e0e0
+}
+.AppChat .fancyHome .searchBox .searchResult .searchItemTitle {
+ line-height:40px;
+ padding-left:10px;
+ color:rgba(14,5,10,.54)
+}
+.AppChat .fancyHome .searchBox .searchResult .noResult {
+ padding:20px
+}
+.AppChat .fancyHome .searchBox .searchResult .noResult .noResultIcon {
+ background-image:url(data:image/png;base64,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);
+ height:100px;
+ background-position:50%;
+ background-repeat:no-repeat
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min--moz-device-pixel-ratio:2),only screen and (min-device-pixel-ratio:2),only screen and (min-resolution:2dppx),only screen and (min-resolution:192dpi) {
+ .AppChat .fancyHome .searchBox .searchResult .noResult .noResultIcon {
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATIAAAFQCAQAAACW8zofAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAAFiUAABYlAUlSJPAAACJ9SURBVHja7Z13fBZF/sffCUkoCQHBIKLoCIhKExs2sK0dLNjbKaLnT70T63nq6endefbCiWJvByqeil1QXDzOAioICCgg4FA0AgECJAQSQn5/JIGQPGXL7DOzz7NvXnevmGdn9jP7fDI7Ozvf72QRAmQHzuZIDqAjsJL5TOQdMVe3qginZOkWkAzZgb9xKc0b/bqGj/iXmKBbnYbr0YI2rBMVunW4wXCTyUG8RPu4H3/OyaJMt8aUXIdsenEup9GVPLKBEr5lDK+KzbqVOcFok8nLeYpmCQ8p43zxgW6dgV6DNpzM6RxP2xgf/sgNYrxuhckx2GTyFN5OYrFanuEGUa5bbSBX4Cgu5wxaJjikhjvFP3TrTIaxJpMd+JF2Dg9ewEXia92KlbY+izO5hQMcHXyzeFC33sRk6xYQl4ccWwy6MUkO1S1YHbI/3/KGQ4vBvbKfbsWJMbQnk134yfUfwGPcGI6BcMKWt+Je/uiy7ZPFYbp1J8LUnux8D8qGMVa2dF3KKOQRfM8w120/VB6iW3kiTDWZ5anUKXwkW+mW7h15DTZdPRU9Xbf2RBhpMpmF17/Mo3hP5unW763NcjiPkeOx+EG69SfCSJPRHu+3PYv/SCcTH0Yhs3iBa31UsIvuFiTCTJP5u+WdhvEzR014nCG+ypv5PRotbrXP8rfIwbqb4AZ5C1f7rGKF7jYkwkiTiTJ+81VBFi/KLrpb4RR5Anf7ruRb3a1IhJEmA77wWb4NL0tD5wC3R3ZklKOXZ4l5V3c7EmGqyfxftP6+b0Gp4RmKfNcxh//pbkYiDP1rly1ZmmCJjzPW0V0s192SJO08jXcUVDNIfKi7JYkwtCcTFfzddyWF3KW7HYmRLXhUQTXDzbaYsSYDRjLVdx2Xy+66m5GQYezhu45/c5PuZiTDWJOJzQxmmc9KcrhVdzviIwt826OM68Ulolp3S5JhrMlALONIFvis5AK5s+52xOVSX0P+JTxIVzFcdyOcYOjAvx7Znse4wFcVdwj/s1DBtO1H9k560CZ+YAHFrKCEGiCPPZjAKpaJYt36nWO4yQDkUdzEyZ6VLmRPUaO7DTFa1Z/PE33MRD7jWxaYfzNMTghMBiD3YRT7elyjcLj4Srf+GC16lstjfjCNMbwtFurWp5KQmAxAFjCQiznR9TjyYWHc85dsxq90aPTL9bzIc2KWbm3qCZHJapFduJKhriZq54p9dKtu0orGN8sVPMLTolS3rmAw+OkyNmKRuJnduRHnc/l7S/NWWx3X4OcK7qCruD9dLRZCkwGIcvEI3bgDp9Hjh+tW3IQjtv70JnuLu9M7Dj6UJgMQZeJuuvOao4MP1q12e2R23XLp5ZwlzhZLdOsJmtCaDEAUiws4icVJD+ytW2kj9iQf+IS+4i3dUlJBqE0GIMazL68mOainbpWN6E4Nf+Mk4W9pZmgI3dNlbORFPJ0wMqCF2KRbYwO1l1MmxuhWkTrSxGQg9+UdRNyP9xLzdStsoDUn/JHubgj97bIeMZODEiza3kG3vu20ZpTF0shkIEo4nni5yvJ1q8tk0shkICoYzOiYH0Um00hamQzEZobweowPWutWlsmkmclAVHMxaZ3gM3yknclAVHIujRf3pMGqrPCShiYDsYEzGsUHrNetKZNJS5OBWM7pbGjwi1W6FWUyaWoyENP4Y4P/9JvCJcIHaWsyEC9S//q5hrRf6WAyaWwy4P+ojekpNunNZeaR1iYTq/g9ANFmX1pJa5OB+JDXgZm6dWQ2aW4y4EbK+Ua3iMzGa7bl0CB+kQ8yWWWNdhYd6UQR7ev+taAQKCAXKKOKatZRxipKKGEVJSy20noFf3LSZj1ZfGRz/8N+uy196E1PutCNzrhN4l7KzyzkJ2Yxi3lWle4rkmoywGTesVtzCP05gN7spqzSSn7ge77mf/xgbdHdwtQQmSwG9g4cw5EMoLeCbK7xWctXfIHNVCvN36xGJtsOuy8DGUi/QM3VmNV8ygeMs0p0tz4oIpPVYR/MmZydIEogaKqZxJu8ZRmdkd8byk0mm7EH3elMR1rSmhzWs5HVLGUJPwkj3yDaXRjC+XTTrQOAaiYwmrFWqDayT4Yyk8kW9Oc4Dme/BKFpPzONL/hYGDIDb+dyOr/HMm62cDWjedaarVuGKhSYTLZkIBdyIi0cF1nMm4wR/hMP+8DuxDUMbZK+ySQm8wT/SYcJD58mk3tyLRfRxlPhOTzBaKFhOaHdmxs53/Vslw6W8ijPWSFfcunDZPIwbmGgz1vNGp5guEjhkkJ7AH/h+FA98JTyFA+H+dnT48WWvbifkxVpWM/9DBflwTfW7sfd22UGCw9lPMZD1hrdMrzhwWSyHc9zmuK+YCk3iDeDbKi9L//glCDPEDilPMojYXwP6tIqMoeRDA1oqvIDrhS/BFGxXcR9DDHuGdILxdzOi5aB2bwT4cpkshvvBJqGaQ1DxTtqq7TzuIbbaRug6lQzheutKWqrlNm0oTU5QBVlrFOb2N2FyeTBfEQ7tY1rQg0j+JOoVFWdfRTPsGfAmlNPDaO53lLyuCQHcSedKWrUz1dSzBIW8gOzmSpW+juHY5PJHnzlcarCLZM4Q8W7AbstDzE0VM+RbljBdZazZKZJkEN4Ismu7z/yFRMYL9Z6O4PDr0DmMdPBJi1+WcEKyljP19zlt8O2B/M4nQJXrJcPudLyu8kZIPfmDXolPaySCbzGWOH6lZdTk12nZGfGWPzGN3zDHBaxSFUOaLuQJ33uyBQW1nGVlSyZqQNkK0ZxhqNDS3mRR8VSN7U7Mpks5Gflo7F1TGA8n6jP/WwfxisaV1Oknle42lrntxKZzcNc5/DgSl7ln8LxDn7OTHYZzym8KGW8xWt8pm54vw07h9v5S/pHLjRCcqGlYP8oOYxHHE9PVTKCu51tcOHMZGMZrOhyzGE4Y4LaGsEuYgzHBFO34WzmVh72P38mh/C8i/nEEm4SLyc/zJnJltBZwYWYyAN8Ety2gPZBvKVEZ1h5m0v8v0qXQ3nO1RP5WK4SSRZaOqhONqPK90TAZG4XE/1egETYl/G4i8VG6ckPnGb53esYeQVPufq+V3CBsBMd4KRrLPBpsSWcKw4L0mJ2M/tRnst4i0EPvrYH+K1EPMOdrgp04GN5Y6IDnPRkOVR6ttkWHuFvwW5PZbfkFWVjxvCziSGWz40oZBajuNBloZEMize36WxMtgxvm/kt4WIxyV+Dk2F34H36BXuOkFHDbdZ9/qqQefyXQ10Weo1LRMx1vM6eJLwtlH6VPoFbbA8mRxZrRBb32k/YvoY4opKzcBs3dT6jZcwJEGcmc59NupKh4kKv77qcYu/F/+gS7DlCytW8aPtakCV+ZQhuZwLO4QUZw9zOTDbGZc7VEo4VL/q6SA6wezOJXYM+S2i5hFdtX1EMYhwPuy50MXc3/aUjk4kyV6dbwCHicxfHe8I+gM/YKeizhJpzeNOfzbiDea7L3CrPbvwrpy/IWzGd7o4OXcrBoljBJUqI3ZeJZm3KZSjvcbbl4/WdHMAk1zMLGzhg+8hah68QxAbOwskIq4R+KbBYLz6JLOaIU3nFz9hMfM4zrgu1YpTMbfgLx++pxCwGUprkoAfoEPxutLZgHEVBnyVtOIunfT1p3p70W2/Kgfy14X+6CK4QX9KP7+J+vJ5LxZ+DezNZj13EhGi474rLuMd7YVHiqfSt8pBt/+E+Wun33NxktdYGnuIBsTygi9QAuxUTOTj486QdV1tPei0qmzOP3V0Xm81+9ZvHeom7zOYILPqwC9WsRDIBO9gXR/XYWbzDqak4U9pRyUmW57fH8ipGeih2o3ik9odQhVnY93KLbg2hZS0DrFneisrmLPIQL7GGbrUBQSEKeLUviCzmgza8Z7f3VlRs8hThsQO31v4Qmp7M7s2UJIFbEcn4mIHe8tPKtvxKS9fFqugsloemJ7Pb8FZkMd+c4HKl2FZEaZy93ROTy+MQkp4sGvAro4ZTLU+bZ8tD8RKqUsMuojgcPdn1kcUUkcW/bU9xEGIyXhZ2Z/FSKG6Xdh8/k4kRjdiBl21v37q3IOLDZSvjTWa34BWa61aRVhzNjZ7Kve2pVD4DjTcZ9zvI0hDhjrvtvu4LiRke9z8+wXCT2RbX6NaQhuQx2vZyd/jE09n6Gm0yu4Bnw/H8Gzp6cpuHUt4iNnY32mT8nT10S0hbbrV7uy7jLb9jgcH9hL0f36Z0I61M4yv6u82eITd4mPdfbmxPZmfxZGSxQDmMy1yX8bIVj7km43fRurHAucdu67KEl8ew7ww1mZ0fTcCmgCLuclliKu6X13uc+w2eP3tMjBDhjqttZzFodYhqxro8QwUfGmkyezdu0q0hQ8jFbdaMkbjbOf0lscZIk3GXh2eYCG+cbrsa+4o5PO/i8BLuMvIFub03v9OtIYPIcj36/RPzHR97rVhhpMm4I+MSC+vlGPtIN4eLtZzpKNAbHhWvgoEms/fiPN0azKMw2LdrLtfLitkc7yCx1CP1qz2MMxm3GahJM23Yn15BXpaj7UPcFRDfcFDCN5mlXCxurA/1NuwLtXeO+rHGNKc32RTRl1z/lcXjBrcFxBKO5jzmxPhoPSPYW4za9gvD3l3a99SHUUXUks3+FNb9XM5MNgZzmi3s5S1vtuzHQPqxB23YwHJm8gnjRCORRpnMLmBpWu1MqYB92LnBf21iJgEF64+whgXVBrNul5dGFtuezttZDJqzf1A5sy51/R7TMWaZ7ErdAsxiB7o1+V0O+waTYLKAi4Nqh0Emsw+nh24NJtGSXjFHM9n0ZLcgTnh5UC0xyGQeVjelMc3oneBpsht7qh9O97bdZu53iDEms9twjm4NJtGDgoSfd6an+i8voL7MGJNxPvm6JZiDcJCvtK36VQTn2IF8B+aYzO1ePmnMjg52wNjANMpVn7iA04JoT2CvomUu3ejB3rTjHpF0qwm7M4cFpSRs5Dt4/lnHTKoc1OWaCzwmI0iIYpPJLHpwBAPozV5149b/S24x4CyD+lSt5NAn6ZdSwhw8pRlLzvF2W6tUfZsUIfM5gVM5udFg4gHhLA/8maobFk6y6JV0pPUr81xveuSYXE5hlP9qtkeByWRzTuUijo+xqemHzuKU7Q6ut71LU7rSLskRP/NzsBIGG2cy2Y2rGBLnyizmd8JZrz4wulkC7JRkkrWGuQS+3ctxdnNrk9oqfZhM9uUWzo5rj0rOFWscVhWluANas3fCz6uZ7XKzPk8UcKTHxCpx8diDyEPkh3zHuQnK3yq+dlaX3Yyj1TYqjOTSJ2HAfCXTU2ExgBNUV+ihJ5PdeCDpnt+TXCTlPpg2qpsVNrLpnTDTXwUzqEiVmGPVt84VsoW8i9lJLVbOZS52WbJUNyp87JlwjdM6pqXOYtDbVrw9miuTyUOZyZ0Okmv+RSx0UW3GP1l2Shguv4rp+Niy0j1ZHK62Qscmkznyn3zuaGPVqYxwLsDOzvS5/rYJL2ox3wc18Rofxd+IwzGZ3IXXGODo0BquFm4C2Xtm9oisecI4pMBnxWKjoyeThzHVocVglPjWlYKM7sea0Yd424TXMFePxeAAu4X/SrbhwGTyHGw6OqxvE7e7VOAy4i+92IvWcT6pZha/6pLVnL4qq0tqMnkNY3Du62fEUpcK3GcujUuuWcFXSdkt7t9uFdMp0Smtj8rKkozJ5J9dpRaq4F53p7dzVGbp7047VlHCajarqzQw2tE1zicVzGSDXnEK//STmEze7DJ71VPC7au17ip3G2lLLh3pyBZKKaEkqEBYJcQLE4H1zEztlEUsUmUyealLi21muM7GtNrq12za0Y7ulFFCCeuDWxjjmfirxlYxO/VTFk1JjcnkSa43ahgr3G+LovBm2TTotYACBJV1t1ADvrqt7BMnoKGYuWb8SbSzO1nKnjvimEx25zXXCc6Hezh/Vw9l4tA2zu/z2Jmd2cIaSlhlxC10jzhhIpJFuqVtY091D7cxTSZb857rKdLZYrKnpigjcfh+Nu1pD6yvu4XqoyjONislrCafKqrM6Mv29LjJTQxi92Qj2Mt1TS96Or9Q1ZBWcSc1t6c1rdmDTayihDUabqEFccNEdmTHup+qtvtX2eDnFCLUVRXDZPJcLnFdT5WXRbt2y63X1Tfu0pA0pxOdqGYNJZSk8Fkul94ORiG5cWPHa023uZH1ArHfruqqamIyuRNPeqjHFis9lPK0UXFs2noo06yu91hHCatScAvNoqfPgNxccmkV4/c1dfabrk6swu+maU/2iKfcRG94OrvTl1UO8JNQqZBCurCx7hbqLk29G7olDRPxShZ55KmNb+ykrqpGuuSxXOChlmre9XT2Dqqa4XRElogW7MIuVLOaEkoCuAF1VNk5xETpbV/ZQKaRyWS2i0XTDZniKIA3wIaoSwzXjCKKqGE9KylRmAggi3zWURBoWJbSIKMd7RxL0du57Xuyiz1Ojn7s8ezK7h5tVVVURxaFFNKVClZRQqmCW2gNC4FsCiikDYWBbLmi+AFmB7yMs2PQwGQyz/WeYfVM8Fiurarr0dp/FTFpya7symZWU8JKBRMeW1jHOpYBuXVmK1Q4klIcLlkYgMm4mN091bGBqR7PXuCxXBOmkEsLWtKy7v+bK70t5dCBLJYrrBGqWFUX4pZPIYW0Id/3QiXFPVkr/1XUstVkMtt9Lvc6pgiv925lzaidQdo2CZFF862Ga0FL348Fq5gT2Dx8OeUUA81oXde7eV2YorwnU8S2nuwU9vFYh7ftz4Hgdj+oYeN2bymbbdfPtXD5WnYNswOc2KinmlJKAWheZ7bWLnUq7smULcLaZrKrPNfhfQZQYU+WmGrKt3tSzNtquRa0pHnCG9W6lMcLbWIlK6l9Iq0dt7VydCtV3JMpezapM5nszHGe6/BusgD3cUlMJZUNNjrLJp/ecdaYlzFD2yKhGsoo4xcgh8K6kVuiS6Z9qWMc6nuySzyPlCt0hdSooyU941hsA9ONWMq9mdWsrtNaa7amM26VZqzeiEG9ybxvFPCTqyhLA9mRHnGmESqYntqVDw6ooILlxJpxM7UfqzOZ7OljXZenbZ/qUJ5Z1y1ZiDiru2ATM1SPchTSdMbNhB43NrV/wskSqCTC/ZLrbWi+Ljn0iPtmq4rpqUxy4oNtM26KcbY7rwNqTXa6jxrcxlk2RGtPlk/vuI+3m5muOyhNP8q68RyQ7dnPRw1+YlA13o2K6BF3FmozM4La8C9MKOvIc4AjfL2D8fO2pVRVM9yRxR4JVhdXM4t1eoSZhbKLkAMc5asGP7c8pzlllZJDT9rH/XQLs/XIMg9llyEHOMVXDX5ueaWqmuGcRCMxqGFOqjKzmk6lpWw9eo5s7jMuxU8g4wpVzXBKopEY1PCjqtUt4UfhhchhoMZUOL+l8mSJR2IA81MryGwUXoocztXYkMB3PmjY0EQjMYAF/KLxUhiHwuRoOb5Ta/hJxllMVWpekiceiQH87GtWOQ3xM//ZiGzfN0sfiR+tLanpPIo4MInFloT/Lb9qlJpsZ1/lq3CTTL0pgWcYyaJL0qjtX3y9gE1TFH4z2T4X2W4Q/rqAn9Q1JRY59En68Pwb84IVEU7mq6sqh3Jf4Rx+X3ErbEpT8umTdHnnSn4MUkJY2aLyzz+HNb5M5nc2ZZa6pjSmA/skXSMfZIBIqFlkKVy8kM1cX+X9DmYCMlkWXemV1GKpCRAJJUq/l2wcbhgYB++RSgBYvykOZwRqR2LJQ0hTHyASIhSbzN8Gmv633/xeZXNq6ZFk2hX0BoiEAMUm+5LFnkvPd7nFTSxmqGxOLT8lXZlvSoCIscxQWVm22MJjnkt7L7kNL5lmk1DBrIRjLRMDRIxiuaV04jAbeNrjvLvkBQUKvlDZnHpKE8x9mR0gYgRfqa0uG0Q513sqe41QsEDXWhnMhGxxnHeR4QkQ0YjiP/xsAPEGz7kuOVJ8oEjDl2qbVM/CGOEHUYCII9T3ZAD8gYmuyk3w2PvFIpAbJtTwQ6NwkOooQMQJ5XyntsI6k4lKTnUxHfEBpwl1ActeU+glZTPfNxjgV/N9FCDihP9ZioPRt8YpiXIG8aiDdyw13M9gFaOxeqwlwb3B3Mj3dc+ZUYCIY5T/0TcIhhNV4gaOZGbC47+jv7jFc9K7eIxX3axtrGUeUYCIK8aprrBRxKX4nP04nY9iTIZX8QGDOFAoHhQC8E4AdW6lmMVRgIhzFlr+3mbHoEk6G1HDu7wr23IE+9KNfKCMn5jF5yK4u80XrPW1jDsJ/tZVZhjvqa/SkE277X/zO90aIgAYYCl/2g9y7wI3jNUtIAKA31TPkYE5JhunLlFRhA9etwJYYGeIyaxNvK1bQwTwahCVGmIy4GXdAiKYZ30TRLXmmGxSsEElEQ54PphqjTGZVaNk4VCEdyp5KZiKjTEZ8FK0klAr71oBzVgbZDJrOe/r1pDRPBtUxQaZDBihW0AG8wOfBlW1USaz/qt6JVOEY4ZbgUU5G2Uy4H7dAjKUFYwOrnLTTDY2ShOmhRFWgIEPhpnM2sxw3RoykHKeCrJ6w0wGPBVE4oKIhDxp+dnyIynGmcyq4EHdGjKMDTwU7AmMMxkwMsoQnFIeswK+dxhoMquCf+rWkEGU8kDQpzDQZMCzUfrDlHGPFXgQl5EmszYrDB2OSMTiVLxlMdJkYH3MR7o1ZAR/svxsW+QQQ00G3BityQicz6w3UnEaY01mzVWS/SwiPlVck5oTGWsy4C6Vu2JENOFha05qTmSwyawy/qhbQxqzkH+k6lQGmwys9xijW0OaUsPlVsoStRltMuCa6E1mIDxp/Td1JzPcZFYJl0ZbhihnLn9K5ekMNxlY43hCt4Y0o5KLUnerhBCYDLiZH3RLSCvutKal9oQhMJlVwYWkYF46Q/gs9UupQmAysGbwB90a0oRlnGelfLefUJgMrBeCiwrMICo511qR+tOGxGTANUzVLSH03GAFkYw1KYZkWnSCvRtTKdKtIsS8bA3Rc+Lw9GRYSzgFxRnmM4iJXKHr1CEyGVhfMzSamvXEPM5QvQWEc0JlMrBe4TbdGkLISgZZGtOlhmhMVo89Ilqd4YoNHGP52wTcJyHryQAYxiu6JYSISk7Ra7FQmsyqYUiUkt0hlZxnudv/LwBCeLsEsPMYy0DdKoynmvNTs4o/MSHsyQCsSs4IdkemtODPJlgstD0ZgJ3Dy1ygW4XBPG1dqVtCLSHtyQCszVzsYVvrTGGsOYsKQmwysKq5god1qzCS8Zyf+tUW8Qjx7bIe+w/8i2a6VRjFOM5IRWS4U0Ldk9Uxkkm6JRjFfzjdJIulh8ke4hjdEgxiOBfoe0sZmxz/VejFvo0bdGswhmqusx7XLaIpIR+T2VcxUrcGYyjjfOsD3SJiEWqT2Rfy77S44avgJ862ZuoWEZsQf0X2IF4Is36lvMGBplosxD2ZPYDxtNKtwgg2cZOJI7FthNRk9r5Moo1uFUawiHMtw0NsQnm7sbsxIbIYUMMT9DHdYqGcwrB35dMoaglYxFArFNPQoevJ7CLGsbtuFdrZwuP0CYfFQteT2QW8Ty/dKrQzlyvDYjAIWU9m5/EuB+tWoZkybmHfMFksVD2Z3YwxGf6WsoYx3Gwt0y3DLaExmZ3F0wzWrUIr/+VWa4puEV4Ijcm4j8t0S9DIbP5qva1bhFdCYjL7Fm7WrUEb8/kbY6wtumV4JxQz/vYVPBUOpcqZx32MtjbrluGPEHx19lmMycjl1d9xL2PD3IPVY7zJbIuPyNOtIsVs4SNGWJ/olqEKw01mH8zEDFtrsZLnedqSumWoxGiT2b35jPa6VaSQyTzBm9Ym3TJUY7DJ7C5MYlfdKlJEOa8y0pqhW0YwGGsyuwNf0k23ihSwhS8YxRs6k9QFjaHzZHYbPs0Ai81hNK9aS3TLCBojTWa34kN661YRKN/zFmOt2bplpAYDTWbn8TqH61YRENV8w7u8ZS3QLSSVGGcyO4sXGKRbRQCs5BPG8bFVoltI6jHOZDzBhbolKGUjk/mMT/k6HebuvWGYyey/c5VuDYrYxLd8xkSmmJX8RAdGTWHYw/iXbg2++YWvmMzXTEu/SVWvGGQy+0JGmaTHFb8wgxlMZ4r1i24p5mHMl2qfytiQrbUoZy4/MovpzLBW6hZjMoaYzO7HZyF4Eb6ZJUjm8yNzmZv+k6iqMMRkYOfRkc50ohOd6EgHOlFEB8192waWUsxSJIuQSJaFffmgHowxWSzsbNrTrsG/Hbb+VEg+BYpOU8kaVrOaNVv/9xvLWUFxOr9PTCVGmywZ9g7k05y25NCaPPIBKCAXgOwG2TI2UlH3UwUbgbVsoZRKyihlQzTFEBEREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREQGEPO4yKGQ2RRTVhRG3oRWtKaQV+bQFWtICoC7Osz6is4oyYD0bKKeUDWxgLatZzSpKWCGqdLdIL5HJkNl0pjO7sSud2Z3OdKRIcXqEVSxnCUtZxmKWsYTFolJ3q1NJhppMFtKDvele9695ik+/Gcl85jKf+fwgluu+GkGTUSaTu9CXvvRlP7oY1PLfmMF3TGc6i0SNbjFBYM6lDgyZTU8GcDj92U23liSs5ku+5HOmibTK0pjWJpPdOJETGNAg9Uo42MjXfMx4ZqRHz5aWJpM5HM1JDGJP3Up88hvjGc+Hoky3EH+kmclkNv05j7Mo0q1EIRW8zxjGidCmuEojk8muXM5Fabuv3FrG8oyYoluGF9LCZDKL47mO48nWrSRwZvAvXgvbY0HoTSazOZPb6aNbRwop5kGeFht0y3BOyE0mT+Be9tOtQgPF/JUXRbVuGc4IscnkrjzGYN0qNPINQ8Uc3SKcEFqTyYt4PHTzX6qp5J/cI4xP+x5Kk8lmPMj1ulUYwiecIwxPBR9Ck8lWvMapulUYxBwGCalbRCJCZzKZx0dYulUYxgKOFL/qFhGf8M0s3R9ZrAndeF0avPlZyEwmD+Va3RqMpD/DdEuIT8hul3ICx+rWYCgldDb17WaoejLZKbpVxmVHTtItIR6hMhmHhK3nTSmH6RYQj3CZrINuAUazo24B8QiXydboFmA0pboFxCNcJpuqW4DRTNMtIB6hMplYyLe6NRhLGe/rlhCPUJkMuFu3AGMZYe4bzNA9rcn/cLZuDQYylwNFuW4R8QhbTwa/Z5ZuCcaxlrPNtVgITSbWcgKzdaswitUcJ4y+IqEzGYhijuRT3SqMYQFHCMMfh0JoMhCrOZF/YPyK0BQwmoPMX4IduoH/NmQ/nqavbhUaWcaV4kPdIpwQyp6sFvENB/EHVurWoYUKHqJnOCwW6p6sFlnAMG6gvW4dKWQTL3CfWKJbhnNCbzIAmc+lXEs33TpSwCqe4XGTl1rHIi1MBiCzOZYrOIU83UoCooYveJY3RYVuIe5JG5PVIndgMOdxjOKcr7qZwWu8LhbrluGVNDNZLXInzmAQR9FKtxKfVPMNH/GGmKdbiD/S0mS1yBYcwYmcyD66lXigmI8ZzwSxWrcQFaSxyeqRHTmUIziM/cnRrSUJNczlKz7nS7FAtxSVZIDJ6pH57M9+7E9fepCrW00DaljId0xnBtNEWs76ZZDJtiHz6EUv9qrL4t9Cg4TN/Mw85jGfH5kp1um+IsGSkSZriMxmN7rRmd3ozK50RgTyuFDJUpaxhKUsZSkLWJRJW+FkvMmaIgvoyE5b91ZqSz6taEs++RSQSwEA2VvTVpVTu4XNRirYSDlrKaOcckopZTUlrGQlK8Qq3a3Syf8Dpbcs0d6sV1kAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTYtMDgtMDJUMTA6NTM6NDQrMDg6MDA0V8mYAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE2LTA4LTAyVDEwOjUzOjQ0KzA4OjAwRQpxJAAAAE50RVh0c29mdHdhcmUASW1hZ2VNYWdpY2sgNi45LjEtMTAgUTE2IHg4Nl82NCAyMDE2LTA3LTIyIGh0dHA6Ly93d3cuaW1hZ2VtYWdpY2sub3Jn3g9mFwAAABh0RVh0VGh1bWI6OkRvY3VtZW50OjpQYWdlcwAxp/+7LwAAABh0RVh0VGh1bWI6OkltYWdlOjpIZWlnaHQAMzM2vluJqAAAABd0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAAzMDYGh4o2AAAAGXRFWHRUaHVtYjo6TWltZXR5cGUAaW1hZ2UvcG5nP7JWTgAAABd0RVh0VGh1bWI6Ok1UaW1lADE0NzAxMDY0MjT6WdzCAAAAE3RFWHRUaHVtYjo6U2l6ZQAxMS45S0JCJDlWlgAAAEp0RVh0VGh1bWI6OlVSSQBmaWxlOi8vcnVuL2ZvcGRfdG1wZGlyL2ltZ3ZpZXcyXzU4YWRfMzQzYThhNDA0MDY3NzFfYWFiMWRfOTBbMF1DYzAxAAAAAElFTkSuQmCC);
+  background-size:90px 100px
+ }
+}
+.AppChat .fancyHome .searchBox .searchResult .noResult .noResultText {
+ margin-top:20px;
+ text-align:center;
+ font-size:16px;
+ color:#a3a3a3
+}
+.AppChat .fancyHome .searchBox.active input {
+ background:#fff;
+ color:rgba(0,0,0,.54)
+}
+.AppChat .fancyHome .searchBox.active .btnCancel {
+ color:#007ddb
+}
+.AppChat .fancyHome .searchBox .split-line {
+ height:0;
+ border-bottom:1px solid #e5e5e5;
+ margin:5px 0 5px 50px
+}
+.AppChat .fancyHome .project-container-head {
+ height:44px;
+ line-height:25px;
+ background:#f2f2f2;
+ padding:10px 15px;
+ margin:10px 0;
+ font-size:13px;
+ color:#999;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .project-container-item {
+ padding:5px 10px;
+ line-height:42px;
+ height:42px;
+ box-sizing:border-box;
+ overflow:hidden;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex
+}
+.AppChat .fancyHome .project-container-item.active,.AppChat .fancyHome .project-container-item:hover {
+ background:#007ddb
+}
+.AppChat .fancyHome .project-container-item.active .count,.AppChat .fancyHome .project-container-item.active .department,.AppChat .fancyHome .project-container-item.active .groupname,.AppChat .fancyHome .project-container-item.active .username,.AppChat .fancyHome .project-container-item:hover .count,.AppChat .fancyHome .project-container-item:hover .department,.AppChat .fancyHome .project-container-item:hover .groupname,.AppChat .fancyHome .project-container-item:hover .username {
+ color:#fff
+}
+.AppChat .fancyHome .project-container-item img {
+ width:32px;
+ height:32px;
+ -webkit-box-flex:0;
+ -ms-flex:0 0 auto;
+ flex:0 0 auto;
+ border-radius:100%
+}
+.AppChat .fancyHome .project-container-item .department,.AppChat .fancyHome .project-container-item .groupname,.AppChat .fancyHome .project-container-item .username {
+ -webkit-box-flex:0;
+ -ms-flex:0 1 60px;
+ flex:0 1 60px;
+ line-height:32px;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .project-container-item .username {
+ margin:0 20px 0 10px;
+ color:#0d050b
+}
+.AppChat .fancyHome .project-container-item .groupname {
+ -webkit-box-flex:1;
+ -ms-flex:1 1 80px;
+ flex:1 1 80px;
+ margin:0 40px 0 10px;
+ color:#0d050b
+}
+.AppChat .fancyHome .project-container-item .department {
+ -webkit-box-flex:1;
+ -ms-flex:1 0 40px;
+ flex:1 0 40px;
+ margin-right:10px;
+ color:#888
+}
+.AppChat .fancyHome .socketDialog {
+ background:#e94218;
+ color:#fff;
+ height:40px;
+ line-height:40px;
+ padding:0 12px;
+ text-align:center;
+ font-size:14px;
+ position:relative;
+ z-index:3;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .socketDialog.success {
+ background:#3db155
+}
+.AppChat .fancyHome .socketDialog .btn.btnLink {
+ display:inline-block;
+ color:#fff;
+ margin-left:6px;
+ height:16px
+}
+.AppChat .fancyHome .socketDialog .icon-refresh {
+ margin-top:-1px;
+ float:left;
+ color:hsla(0,0%,100%,.8)
+}
+.AppChat .fancyHome .socketDialog .icon-refresh:hover {
+ color:#fff
+}
+.AppChat .fancyHome .fancyHome.disconnect .toolbar .panelList {
+ transition:margin-top .3s;
+ margin-top:46px
+}
+.AppChat .fancyHome .sessionWinList {
+ position:absolute;
+ left:250px;
+ right:0;
+ bottom:0;
+ margin:18px;
+ -webkit-transform:translateZ(0);
+ overflow:hidden
+}
+.AppChat .fancyHome .sessionWinList.hasNoSession .noSession {
+ display:block;
+ background:none
+}
+.AppChat .fancyHome .sessionWinList.hasInviteWin .inviteWin {
+ display:block
+}
+.AppChat .fancyHome .sessionWinList .noSession {
+ position:absolute;
+ top:0;
+ right:0;
+ left:0;
+ bottom:0;
+ z-index:3;
+ display:none
+}
+.AppChat .fancyHome .sessionWinList .noSession .chat {
+ background-color:hsla(0,0%,100%,.5);
+ box-shadow:0 2px 6px rgba(0,0,0,.15)
+}
+.AppChat .fancyHome .sessionWinList .noSession .chat .detail {
+ position:absolute;
+ top:50%;
+ left:50%;
+ margin-top:-133px;
+ margin-left:-160px;
+ font-size:25px;
+ color:rgba(0,0,0,.6);
+ text-align:center;
+ margin-bottom:10px
+}
+.AppChat .fancyHome .sessionWinList .noSession .chat .detail img {
+ width:320px;
+ height:220px;
+ margin-bottom:-10px
+}
+.AppChat .fancyHome .sessionWinList .sessionLoading {
+ position:absolute;
+ top:30%;
+ width:100%;
+ -webkit-transform:translateZ(0);
+ transform:translateZ(0);
+ z-index:2
+}
+.AppChat .fancyHome .sessionWin {
+ display:none;
+ min-width:500px;
+ overflow:hidden
+}
+.AppChat .fancyHome .sessionWin.isLoading {
+ padding-top:1px
+}
+.AppChat .fancyHome .sessionWin>.TxtCenter {
+ padding-top:120px
+}
+.AppChat .fancyHome .sessionWin .layerBlured {
+ -webkit-filter:blur(10px) saturate(1.5);
+ height:100%;
+ background-attachment:fixed;
+ position:fixed;
+ z-index:-1;
+ left:0;
+ top:0;
+ bottom:0;
+ width:100%;
+ overflow:hidden
+}
+.AppChat .fancyHome .sessionWin.inviteWin .inviteTitle {
+ font-size:18px;
+ text-align:center
+}
+.AppChat .fancyHome .sessionWin.inviteWin .inviteContainer {
+ width:460px;
+ -webkit-transform:translate(-50%,-50%);
+ transform:translate(-50%,-50%);
+ height:370px;
+ background:hsla(0,0%,100%,.8);
+ position:absolute;
+ left:50%;
+ top:50%
+}
+.AppChat .fancyHome .sessionWin.inboxSessionWin {
+ max-width:720px;
+ min-width:500px
+}
+.AppChat .fancyHome .sessionWin .chat {
+ margin-right:0;
+ transition:margin-right .2s ease-in-out;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-orient:vertical;
+ -webkit-box-direction:normal;
+ -ms-flex-direction:column;
+ flex-direction:column;
+ -ms-flex-pack:distribute;
+ justify-content:space-around;
+ position:absolute;
+ left:0;
+ right:0;
+ top:50px;
+ bottom:0
+}
+.AppChat .fancyHome .sessionWin.open .chat {
+ margin-right:360px
+}
+.AppChat .fancyHome .sessionWin.open .sessionInfo {
+ overflow:hidden;
+ right:0;
+ opacity:1;
+ z-index:2
+}
+.AppChat .fancyHome .sessionWin.open .sessionInfo .btnCloseSessionInfo {
+ opacity:1
+}
+.AppChat .fancyHome .sessionWin.active {
+ display:block
+}
+.AppChat .fancyHome .sessionWin.active .msgPanel.shake {
+ -webkit-animation-name:shake;
+ animation-name:shake;
+ -webkit-animation-duration:.7s;
+ animation-duration:.7s
+}
+.AppChat .fancyHome .sessionWin.isActive {
+ -webkit-animation-name:isActive;
+ animation-name:isActive;
+ -webkit-animation-duration:.3s;
+ animation-duration:.3s
+}
+@keyframes isActive {
+ 25% {
+  -webkit-transform:translate(-5px);
+  transform:translate(-5px)
+ }
+ 78% {
+  -webkit-transform:translate(5px);
+  transform:translate(5px)
+ }
+}
+@-webkit-keyframes isActive {
+ 25% {
+  -webkit-transform:translate(-5px)
+ }
+ 78% {
+  -webkit-transform:translate(5px)
+ }
+}
+.AppChat .fancyHome .sessionWin {
+ width:100%;
+ height:100%;
+ max-width:1080px;
+ margin:0 auto;
+ box-shadow:0 2px 8px rgba(0,0,0,.15);
+ border-radius:3px;
+ -webkit-transform:translateZ(0);
+ background:#fff;
+ position:relative;
+ z-index:1
+}
+.AppChat .fancyHome .sessionHeader {
+ height:50px;
+ width:100%;
+ border-bottom:1px solid #ddd
+}
+.AppChat .fancyHome .sessionHeader-name {
+ font-size:18px;
+ color:#333;
+ padding:14px 16px;
+ line-height:1.3;
+ max-width:282px;
+ vertical-align:middle;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .sessionHeader a.sessionHeader-name:hover {
+ text-decoration:underline
+}
+.AppChat .fancyHome .sessionHeader .icon-chat-updates {
+ font-size:18px;
+ display:inline-block;
+ margin-top:4px;
+ color:#ff6d00
+}
+.AppChat .fancyHome .sessionHeader .searchHeader {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ width:235px;
+ height:50px
+}
+.AppChat .fancyHome .sessionHeader .searchInputContainer {
+ position:relative;
+ width:100%
+}
+.AppChat .fancyHome .sessionHeader .searchInputContainer .searchInput {
+ width:100%;
+ height:32px;
+ margin-top:9px;
+ padding-left:36px;
+ border-radius:5px;
+ border:1px solid #eee
+}
+.AppChat .fancyHome .sessionHeader .searchInputContainer .searchInput:not(:focus) {
+ border-color:#ddd!important
+}
+.AppChat .fancyHome .sessionHeader .searchInputContainer .searchIcon {
+ font-size:18px;
+ color:#ababab;
+ position:absolute;
+ top:16px;
+ left:10px
+}
+.AppChat .fancyHome .sessionHeader .searchInputContainer .GroupInfoSearchClose {
+ color:#9e9e9e;
+ position:absolute;
+ right:4px;
+ top:10px;
+ font-size:18px;
+ display:none;
+ cursor:pointer
+}
+.AppChat .fancyHome .sessionAction {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ width:360px;
+ height:50px;
+ padding-left:14px;
+ padding-right:14px;
+ -webkit-box-align:center;
+ -ms-flex-align:center;
+ align-items:center;
+ -webkit-box-orient:horizontal;
+ -webkit-box-direction:reverse;
+ -ms-flex-direction:row-reverse;
+ flex-direction:row-reverse;
+ -webkit-box-pack:justify;
+ -ms-flex-pack:justify;
+ justify-content:space-between
+}
+.AppChat .fancyHome .msgPanel .InviteMessage {
+ margin-top:80px
+}
+.AppChat .fancyHome .msgPanel .InviteMessage-withBorder {
+ border-bottom:1px solid hsla(0,0%,79%,.3);
+ padding-bottom:80px
+}
+.AppChat .fancyHome .msgPanel .InviteMessage-icon {
+ width:100px;
+ height:100px;
+ border-radius:50%;
+ overflow:hidden;
+ margin:0 auto
+}
+.AppChat .fancyHome .msgPanel .InviteMessage-iconImg {
+ width:100%
+}
+.AppChat .fancyHome .msgPanel .InviteMessage-title {
+ font-size:20px;
+ margin:20px 0 0
+}
+.AppChat .fancyHome .msgPanel .InviteMessage-content {
+ margin:16px 0 0;
+ font-size:15px
+}
+.AppChat .fancyHome .msgPanel .InviteMessage-content .btnAddMember {
+ cursor:pointer
+}
+.AppChat .fancyHome .messagePanel-unreadTip {
+ padding:8px 10px 8px 20px;
+ box-shadow:0 1px 4px rgba(0,0,0,.2),0 1px 10px rgba(0,0,0,.15);
+ border-radius:20px 0 0 20px;
+ cursor:pointer;
+ position:absolute;
+ top:20px;
+ right:0;
+ z-index:11;
+ background:#fff
+}
+.AppChat .fancyHome .messagePanel-unreadTip .icon-closeelement {
+ margin-left:10px;
+ color:#bdbdbd
+}
+.AppChat .fancyHome .messagePanel-unreadTip:hover .icon-closeelement {
+ color:#9e9e9e
+}
+.AppChat .fancyHome .reactChatInput {
+ width:100%;
+ background:hsla(0,0%,100%,.6);
+ position:relative;
+ z-index:10
+}
+.AppChat .fancyHome .reactChatInput .chatActionContainer {
+ color:#bdbdbd;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-orient:vertical;
+ -webkit-box-direction:normal;
+ -ms-flex-direction:column;
+ flex-direction:column;
+ padding:0 20px
+}
+.AppChat .fancyHome .reactChatInput .inputContainer {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex
+}
+.AppChat .fancyHome .reactChatInput .inputWrapper {
+ -webkit-box-flex:1;
+ -ms-flex:1;
+ flex:1;
+ padding:14px 5px 0 14px;
+ line-height:0;
+ border-top:1px solid #bdbdbd;
+ border-bottom:1px solid #bdbdbd
+}
+.AppChat .fancyHome .reactChatInput .inputWrapper .textarea.placeholder {
+ position:relative;
+ top:4px
+}
+.AppChat .fancyHome .reactChatInput .addToolbar {
+ -webkit-box-flex:0;
+ -ms-flex:0 50px;
+ flex:0 50px;
+ -webkit-box-orient:vertical;
+ -ms-flex-direction:column;
+ flex-direction:column;
+ -ms-flex-line-pack:center;
+ border:1px solid #bdbdbd;
+ border-radius:4px 0 0 4px;
+ color:#fff
+}
+.AppChat .fancyHome .reactChatInput .addToolbar,.AppChat .fancyHome .reactChatInput .addToolbar .icnoBtn {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-direction:normal;
+ -webkit-box-pack:center;
+ -ms-flex-pack:center;
+ justify-content:center;
+ align-content:center
+}
+.AppChat .fancyHome .reactChatInput .addToolbar .icnoBtn {
+ -webkit-box-orient:horizontal;
+ -ms-flex-direction:row;
+ flex-direction:row;
+ -ms-flex-line-pack:center;
+ cursor:pointer;
+ font-size:24px
+}
+.AppChat .fancyHome .reactChatInput .addToolbarHover:not(:hover) {
+ color:#9e9e9e;
+ border-color:#bdbdbd!important;
+ background-color:#fff!important
+}
+.AppChat .fancyHome .reactChatInput .addToolbarHover:hover .icnoBtn {
+ color:#fff
+}
+.AppChat .fancyHome .reactChatInput .mentions-input-box {
+ position:static!important
+}
+.AppChat .fancyHome .reactChatInput .sendToolbar {
+ -webkit-box-flex:0;
+ -ms-flex:0 110px;
+ flex:0 110px;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-orient:horizontal;
+ -webkit-box-direction:normal;
+ -ms-flex-direction:row;
+ flex-direction:row;
+ -webkit-box-align:center;
+ -ms-flex-align:center;
+ align-items:center;
+ -ms-flex-pack:distribute;
+ justify-content:space-around;
+ border:1px solid #bdbdbd;
+ border-left:none;
+ border-radius:0 4px 4px 0
+}
+.AppChat .fancyHome .reactChatInput .sendToolbar .icnoBtn {
+ cursor:pointer;
+ font-size:20px;
+ transition:all .2s
+}
+.AppChat .fancyHome .reactChatInput .sendToolbar .icnoBtn:hover {
+ -webkit-transform:translateY(-4px);
+ transform:translateY(-4px)
+}
+.AppChat .fancyHome .reactChatInput .sendToolbar .btnCapture {
+ display:none
+}
+.AppChat .fancyHome .reactChatInput .sendToolbar .icon-outil_capture {
+ font-size:18px
+}
+.AppChat .fancyHome .reactChatInput .chatAction {
+ font-size:12px;
+ height:20px;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-pack:end;
+ -ms-flex-pack:end;
+ justify-content:flex-end;
+ -ms-flex-line-pack:center;
+ align-content:center
+}
+.AppChat .fancyHome .reactChatInput .chatAction>div {
+ cursor:pointer
+}
+.AppChat .fancyHome .reactChatInput .chatMessage-textarea {
+ outline:none;
+ border:none;
+ width:100%;
+ height:100%;
+ resize:none;
+ padding:0
+}
+.AppChat .fancyHome .reactChatInput .mentions-autocomplete-list {
+ left:inherit;
+ bottom:80px;
+ right:20px
+}
+.AppChat .fancyHome .reactChatInput .mentions-autocomplete-list .userItem {
+ height:45px;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-align:center;
+ -ms-flex-align:center;
+ align-items:center
+}
+.AppChat .fancyHome .reactChatInput .mentions {
+ display:none
+}
+.AppChat .fancyHome .reactChatInput .quoteMessageContainer {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-pack:justify;
+ -ms-flex-pack:justify;
+ justify-content:space-between;
+ -webkit-box-align:center;
+ -ms-flex-align:center;
+ align-items:center;
+ width:100%;
+ line-height:35px;
+ word-break:break-all;
+ font-size:14px;
+ padding:0 9px;
+ background:#f1f1f1;
+ color:#9e9e9e;
+ border-radius:5px;
+ position:relative;
+ top:-5px
+}
+.AppChat .fancyHome .reactChatInput .quoteMessageContainer .icon-closeelement {
+ cursor:pointer
+}
+.AppChat .fancyHome .reactChatInput .quoteMessageContainer .text {
+ margin-right:10px;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ display:-webkit-box;
+ -webkit-line-clamp:1;
+ -webkit-box-orient:vertical;
+ line-height:1.5;
+ padding:5px 0
+}
+.AppChat .fancyHome .reactChatInput .quoteMessageContainer.highlight {
+ -webkit-animation-name:msgShining;
+ animation-name:msgShining;
+ -webkit-animation-timing-function:linear;
+ animation-timing-function:linear;
+ -webkit-animation-duration:.3s;
+ animation-duration:.3s;
+ -webkit-animation-direction:alternate;
+ animation-direction:alternate;
+ -webkit-animation-iteration-count:4;
+ animation-iteration-count:4;
+ -webkit-animation-fill-mode:forwards;
+ animation-fill-mode:forwards
+}
+.AppChat .fancyHome .sessionInfo {
+ width:360px;
+ position:absolute;
+ right:-360px;
+ top:50px;
+ bottom:0;
+ border-left:1px solid #ddd;
+ opacity:0;
+ transition:opacity,right .2s ease-in-out
+}
+.AppChat .fancyHome .sessionInfo .separator {
+ border:0;
+ display:block;
+ margin:10px;
+ border-bottom:1px solid #e8e8e8
+}
+.AppChat .fancyHome .sessionInfo .sessionInfoTitle {
+ text-align:left;
+ font-size:14px;
+ padding:20px 12px 17px;
+ height:50px;
+ line-height:100%;
+ width:100%;
+ position:absolute;
+ z-index:1
+}
+.AppChat .fancyHome .sessionInfo .sessionInfoTitle .groupCountWrapper {
+ font-style:normal;
+ color:#b0b0b0;
+ margin-left:5px;
+ font-size:13px
+}
+.AppChat .fancyHome .sessionInfo .sessionInfoTitle .groupCountWrapper em {
+ font-style:normal
+}
+.AppChat .fancyHome .sessionInfo .sessionInfoTitle .btnCloseSessionInfo {
+ line-height:100%;
+ margin-top:-2px
+}
+.AppChat .fancyHome .sessionInfo .sessionInfoTitle .btnCloseSessionInfo i {
+ font-size:15px
+}
+.AppChat .fancyHome .sessionInfo .sessionInfoDetail {
+ position:absolute;
+ top:50px;
+ bottom:0;
+ width:100%;
+ overflow-y:auto
+}
+.AppChat .fancyHome .sessionInfo .btnInvite {
+ display:block;
+ width:100%;
+ color:#8d8d8d;
+ text-align:left;
+ font-size:12px
+}
+.AppChat .fancyHome .sessionInfo .btnInvite i {
+ margin-right:8px
+}
+.AppChat .fancyHome .sessionInfo.fullScreen {
+ position:fixed;
+ bottom:0;
+ left:0;
+ width:100%;
+ display:block
+}
+.AppChat .fancyHome .sessionInfo.fullScreen .memberBar {
+ display:block
+}
+.AppChat .fancyHome .sessionInfo .userOverview {
+ padding:10px
+}
+.AppChat .fancyHome .sessionInfo .userOverview .userCard {
+ margin-bottom:15px
+}
+.AppChat .fancyHome .sessionInfo .userOverview .userCard .userInfo {
+ display:inline-block;
+ vertical-align:middle
+}
+.AppChat .fancyHome .sessionInfo .userOverview .userCard .userInfo span {
+ display:block;
+ color:#8d8d8d
+}
+.AppChat .fancyHome .sessionInfo .userOverview .userCard .userInfo span.userName {
+ color:#000;
+ font-size:14px
+}
+.AppChat .fancyHome .sessionInfo .userOverview .userCard .userAvatar {
+ vertical-align:middle;
+ margin-right:10px;
+ width:45px;
+ height:45px
+}
+.AppChat .fancyHome .sessionInfo .userOverview .row {
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap;
+ margin-bottom:10px
+}
+.AppChat .fancyHome .sessionInfo .userOverview .row i {
+ margin-right:10px
+}
+.AppChat .fancyHome .sessionInfo .actionGroup {
+ padding-top:20px;
+ margin:0 10px
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin {
+ position:absolute;
+ top:0;
+ left:0;
+ right:0;
+ bottom:0;
+ z-index:2;
+ display:block!important;
+ background:#fff
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfileContainer {
+ margin:0 auto;
+ position:relative;
+ height:100%
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin.group .sessionProfileContainer {
+ width:80%;
+ max-width:530px
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin.group .sessionProfile {
+ padding-top:50px
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin.group .sessionProfile .profileHeader {
+ height:182px;
+ padding:40px 0
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin.group .sessionProfile .profileHeader .userTitle .userName {
+ margin-bottom:8px
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin.group .sessionProfile .profileHeader .userTitle .groupName {
+ display:inline-block;
+ max-width:250px;
+ vertical-align:middle;
+ margin-right:4px;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin.group .sessionProfile .profileHeader .userTitle .profileTitleAction {
+ margin-top:10px
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin.group .sessionProfile .profileHeader .userTitle .icon-chat-vip {
+ font-size:14px
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin.group .sessionProfile .profileHeader .userTitle .icon-chat-updates {
+ font-size:24px;
+ vertical-align:-4px;
+ color:#ff6d00
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin.group .sessionProfile .profileBody {
+ top:190px
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin.group .searchHeader {
+ width:100%
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin.user .sessionProfileContainer {
+ width:380px
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin.tool .sessionProfileContainer {
+ width:450px;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-align:center;
+ -ms-flex-align:center;
+ align-items:center;
+ -webkit-box-orient:vertical;
+ -webkit-box-direction:normal;
+ -ms-flex-direction:column;
+ flex-direction:column;
+ -webkit-box-pack:center;
+ -ms-flex-pack:center;
+ justify-content:center
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionInterceptContent {
+ height:100%;
+ margin-right:360px
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .groupDetail .groupInfoTitle {
+ color:#999;
+ margin-bottom:10px;
+ margin-top:9px
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .groupDetail .groupIntro .emptyIntro {
+ color:#ccc
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .groupDetail .groupDetailList {
+ margin-top:24px
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .groupDetail .groupDetailList li {
+ float:left;
+ line-height:40px;
+ font-size:14px;
+ margin-right:20px
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .groupDetail .groupDetailList li input[disabled] {
+ cursor:default
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile {
+ width:100%;
+ height:100%;
+ position:relative;
+ font-size:14px;
+ color:#999;
+ text-align:left
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .sessionProfileContent {
+ margin:auto;
+ width:380px;
+ height:100%;
+ position:relative
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileHeader {
+ width:530px;
+ height:240px;
+ border-bottom:1px solid #d9d9d9;
+ padding-top:60px
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileHeader .userAvatar {
+ width:100px;
+ height:100px
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileHeader .isVerified {
+ display:none
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileHeader .userTitle {
+ padding-left:20px;
+ width:320px
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileHeader .userTitle .row {
+ line-height:22px
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileHeader .userTitle em {
+ font-style:normal
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileHeader .userTitle .userName {
+ font-size:18px;
+ color:#333;
+ margin-bottom:14px;
+ line-height:24px
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileHeader .userTitle .profileTitleAction {
+ margin-top:18px
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileHeader .userTitle .profileTitleAction .btnEditGroupName,.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileHeader .userTitle .profileTitleAction a {
+ display:inline-block;
+ text-align:center;
+ width:28px;
+ height:28px;
+ line-height:27px;
+ border-radius:50%;
+ color:#fff;
+ margin-right:6px;
+ vertical-align:middle
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileHeader .userTitle .profileTitleAction .btnEditGroupName i,.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileHeader .userTitle .profileTitleAction a i {
+ color:#fff
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileHeader .userTitle .profileTitleAction .icon-chat-updates {
+ font-size:15px;
+ color:#fff
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileHeader .userTitle .profileTitleAction .icon-setting-six {
+ font-size:16px
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileHeader .userTitle .profileTitleAction .icon-chat-inputer-post {
+ font-size:15px;
+ vertical-align:-1px
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileHeader .userTitle .profileTitleAction span.btnEditGroupName {
+ background:none;
+ border:1px solid #ccc
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileHeader .userTitle .profileTitleAction span.btnEditGroupName i {
+ cursor:pointer;
+ color:#adadad
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileBody {
+ width:100%
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileBody .toolName {
+ font-size:20px;
+ color:#333;
+ text-align:center;
+ margin:20px 0
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileBody .toolDesc {
+ color:#888;
+ font-size:13px;
+ text-align:center
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileBody .toolAvatar {
+ width:110px;
+ height:110px;
+ margin:0 auto;
+ border-radius:100%;
+ overflow:hidden
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileBody .toolAvatar img {
+ width:100%
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileBody,.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileBody a {
+ color:#333
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileBody span {
+ color:#999
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileBody .row {
+ padding:7px 0
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileBody .row .label {
+ display:inline-block;
+ width:80px;
+ vertical-align:middle;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileBody .row i {
+ font-style:normal;
+ cursor:default
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileBody .row:hover a {
+ color:#007ddb
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileFooter {
+ height:130px;
+ bottom:0;
+ width:100%;
+ text-align:center
+}
+.AppChat .fancyHome .sessionIntercept.sessionWin .sessionProfile .profileFooter .btn {
+ width:200px;
+ padding:15px 0;
+ margin-top:40px
+}
+.AppChat .fancyHome .groupMemberListContent {
+ -webkit-box-flex:1;
+ -ms-flex:1 1 0px;
+ flex:1 1 0;
+ padding-bottom:55px;
+ margin-top:46px
+}
+.AppChat .fancyHome .groupMemberListContent-all,.AppChat .fancyHome .groupMemberListContent-result {
+ display:none
+}
+.AppChat .fancyHome .groupMemberListContent--show {
+ display:block
+}
+.AppChat .fancyHome .groupMemberListContent-item {
+ padding:12px 18px 12px 22px;
+ position:relative;
+ width:100%;
+ height:60px;
+ transition:all .3s
+}
+.AppChat .fancyHome .groupMemberListContent-item:hover {
+ background:#f1f1f1
+}
+.AppChat .fancyHome .groupMemberListContent-item .status {
+ margin-left:9px;
+ margin-right:9px
+}
+.AppChat .fancyHome .groupMemberListContent-item .userAvatar {
+ float:left;
+ width:36px;
+ height:36px;
+ margin-top:0;
+ vertical-align:middle
+}
+.AppChat .fancyHome .groupMemberListContent-item .userInfo {
+ margin-left:50px
+}
+.AppChat .fancyHome .groupMemberListContent-item .userInfo .icon-ancrown,.AppChat .fancyHome .groupMemberListContent-item .userInfo .icon-crown {
+ color:#f6bc2e;
+ margin-left:5px
+}
+.AppChat .fancyHome .groupMemberListContent-item .userInfo .memberName {
+ display:inline-block;
+ vertical-align:middle;
+ max-width:140px;
+ font-size:14px;
+ color:#000;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .groupMemberListContent-item .userInfo .memberPosition {
+ display:block
+}
+.AppChat .fancyHome .groupMemberListContent-item .userInfo .memberPosition em {
+ font-style:normal
+}
+.AppChat .fancyHome .groupMemberListContent-item .userAction {
+ height:58px;
+ line-height:58px;
+ padding-right:15px;
+ position:absolute;
+ text-align:right;
+ right:0;
+ top:0;
+ font-size:0;
+ transition:all .3s
+}
+.AppChat .fancyHome .groupMemberListContent-item .userAction .btn {
+ display:inline-block;
+ text-align:center;
+ overflow:hidden;
+ vertical-align:middle;
+ padding:0;
+ box-shadow:none;
+ color:#999;
+ width:50px;
+ height:50px;
+ border-radius:0;
+ background-clip:padding-box
+}
+.AppChat .fancyHome .groupMemberListContent-item .userAction .btn i {
+ font-size:18px
+}
+.AppChat .fancyHome .groupMemberListContent-item .userAction .btn.btnChat,.AppChat .fancyHome .groupMemberListContent-item .userAction .btn.btnChatMention {
+ height:50px;
+ line-height:50px;
+ opacity:0;
+ transition:opacity .3s ease-in-out .15s
+}
+.AppChat .fancyHome .groupMemberListContent-item:hover .userAction .btnChat,.AppChat .fancyHome .groupMemberListContent-item:hover .userAction .btnChatMention {
+ opacity:1
+}
+.AppChat .fancyHome .groupMemberListContent-item .userAction span {
+ width:25px!important
+}
+.AppChat .fancyHome .groupMemberListContent-item .btn.btnChat,.AppChat .fancyHome .groupMemberListContent-item .btn.btnChatMention {
+ opacity:0;
+ transition:opacity .3s ease-in-out .15s
+}
+.AppChat .fancyHome .groupInfoFeed {
+ height:100%
+}
+.AppChat .fancyHome .groupInfoFeedImg {
+ width:63px;
+ height:60px;
+ margin:130px auto 25px;
+ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH4AAAB4CAQAAACec44eAAACHElEQVR4Ae3cJXgcARRF4Vdm5sq4MsnoxEcWZJlVmVmVTLlVZZQFVV7VyLh8x5SZeaEQZs68d8/14l+cmQUrizGsJ8UnMo73iRTrGW1VYzkfyQTZR5ZXwLtwmEywHSjDryQTcEvNjNF8Col/z3BjI5mg22g8CItPGc/D4t8ZaTJRZ755wgsvvPDCCy+88MILL7zwwgt/gwuJ2tXWxE+yRMUg4YUXXvjm4vexOlHb3Hy8wwkvvPDCCy+88MILL7zwwp9gT6K2rxl4nc8LL7zwwl/kSKJ2qvl4hxNeeOGFF1544YUXXnjhhd/K/HbZlw7Dd/z5PO+EF1544Tsa/5Bb7bKfHY9P1IQXXnjhhRdeeOGFF1544dOR8aH/Fe1OWPx9Y3VY/GpjFB9D0t8z3MxYERK/qOx/bw+Go++ziljK+0AP+KVWNYaziRRPHb/vp3lKio0Mt/aKOWSaudmW9OhKcbPoxXS15Edhs/CF5iNuNZl+y7zEDNJNoqeZbn7iTJPwZ8xT5PG90fTv5Jmv2N9o/H7zFiN43+gTDn+xoVH4DeYx+vKkQfoT+prPmNcgfp55je6U1Esvobv5jaJ68UXmO+7Xc0HRe+TXic83/3G1Vvo1ixDj+VmD/pPxFiOO1cAfsygxls9V6J8Za3FiZxX8LosUg3hZTn/JIIsVK8vxKy1a9KL0L72UXhYvZpVdnQ8YXXiUW1eLGQUUWAeWBdY6POBWK+EKAAAAAElFTkSuQmCC) no-repeat;
+ background-size:cover
+}
+.AppChat .fancyHome .feedList {
+ padding-bottom:55px
+}
+.AppChat .fancyHome .feed-item {
+ border-bottom:1px solid #eee
+}
+.AppChat .fancyHome .feed-item:last-child {
+ border:none
+}
+.AppChat .fancyHome .feed-item:hover {
+ background:#f9f9f9;
+ cursor:pointer
+}
+.AppChat .fancyHome .feed-creator {
+ padding:10px 20px 0 16px
+}
+.AppChat .fancyHome .feed-creator-avatar {
+ float:left;
+ width:30px;
+ height:30px;
+ border-radius:50%;
+ overflow:hidden;
+ border:1px solid #e6e6e6
+}
+.AppChat .fancyHome .feed-creator-avatar>img {
+ width:100%
+}
+.AppChat .fancyHome .feed-creator-info {
+ margin-left:40px;
+ line-height:29px;
+ font-size:13px;
+ font-weight:700;
+ color:#000
+}
+.AppChat .fancyHome .feed-content {
+ word-break:break-all;
+ text-align:justify;
+ color:#333;
+ font-size:13px
+}
+.AppChat .fancyHome .feedImageList {
+ width:330px;
+ padding:5px 20px 0 0;
+ overflow:hidden
+}
+.AppChat .fancyHome .feedImageList-item {
+ float:left;
+ width:90px;
+ height:90px;
+ margin-right:5px;
+ margin-bottom:5px;
+ cursor:pointer;
+ border:1px solid #e6e6e6
+}
+.AppChat .fancyHome .feed-body {
+ padding:0 20px 0 56px
+}
+.AppChat .fancyHome .feed-file-item {
+ position:relative;
+ padding:10px;
+ transition:all .3s;
+ background:#eee;
+ margin-top:5px
+}
+.AppChat .fancyHome .feed-file-item:hover {
+ background:#f0f0f0
+}
+.AppChat .fancyHome .feed-file-item:hover .file-info-action {
+ opacity:1
+}
+.AppChat .fancyHome .feed-file-item .file-icon {
+ float:left;
+ width:30px
+}
+.AppChat .fancyHome .feed-file-item .file-icon>i {
+ width:30px;
+ height:36px
+}
+.AppChat .fancyHome .feed-file-item .file-info {
+ margin-left:46px;
+ line-height:36px
+}
+.AppChat .fancyHome .feed-file-item .file-info-name {
+ max-width:100%;
+ text-overflow:ellipsis;
+ white-space:nowrap;
+ overflow:hidden;
+ font-size:12px
+}
+.AppChat .fancyHome .feed-file-item .file-info-name:not(:hover) {
+ color:#000!important
+}
+.AppChat .fancyHome .feed-file-item .file-info-metadata {
+ color:#a7a7a7
+}
+.AppChat .fancyHome .feed-file-item .file-info-metadata span {
+ margin-right:12px
+}
+.AppChat .fancyHome .feed-file-item .file-info-action {
+ position:absolute;
+ bottom:15px;
+ right:12px;
+ font-size:16px;
+ color:#a7a7a7;
+ opacity:0
+}
+.AppChat .fancyHome .feed-file-item .file-info-action>a:not(:hover) {
+ color:#999!important
+}
+.AppChat .fancyHome .feed-metadata {
+ padding:13px 20px 12px 56px;
+ overflow:hidden;
+ color:#bcbcbc
+}
+.AppChat .fancyHome .feed-metadata .feed-comment {
+ font-size:13px
+}
+.AppChat .fancyHome .feed-metadata .feed-comment:before {
+ margin-right:6px;
+ font-size:13px
+}
+.AppChat .fancyHome .groupInfoFile {
+ height:100%
+}
+.AppChat .fancyHome .groupInfoFile .groupInfoFileImg {
+ width:52px;
+ height:60px;
+ margin:90px auto 25px;
+ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAAB4CAMAAAApFEcIAAAAilBMVEUAAADf39/f39/f39/a2dnMysrf39/Lysrf39/f39/My8vLysrMy8rOzczMy8vMy8vPzs7LysrPzs3Kycnf39/Jx8fT0tLf39/f39/f39/f39/My8v29vb39/f9/f3////5+fnn5+fo6Ojp6enLysrf39/a2dnS0dHa2tre3t7R0NDU1NTb29vd3d1bGBoYAAAAHHRSTlMAXcz76zGa7VzKKeYnId8fGNcXEs0RzMudAV/N8nd5PAAAARFJREFUeAHt2AVSBTEQhOF57obD890Jzv2Ph7t0FaETrP8LfGWZSWJmlWotMKo3DNYMpA5bUGoHGuRQ6hAhKNWYEJICFfJWNxPkvX4WCEhcCEhcCEhcCEgpIO8NMkE+HCWGgMSFgMSEgMSFgJQS8uE4E+STjUQQkLgQkLgQkLgQkNJDPtlkQ8f+ftNtMnTuQGJCFw6lwOsISFTo5BRJgdnh2dEH7VjI1P+DBAmazaObfQpaLKNbCIpL0HwV3VwjSJAgQYJetf5CWnyCBN1VlNEVmnWCBAkSFP3iCzjemhAk6LFs/3XxUJIECRIkSJAgQYIECRJUy+PUbDcP1LFKHqhttpfDaZrZ/sFWLa1Sq1bMrgDO8qiq8D5icAAAAABJRU5ErkJggg==) no-repeat;
+ background-size:cover
+}
+.AppChat .fancyHome .groupInfoFile .groupInfoFileContent .nano-content {
+ top:40px
+}
+.AppChat .fancyHome .groupInfoFile .groupInfoFileContent .nano-pane {
+ background:none
+}
+.AppChat .fancyHome .groupInfoFile .customSelect #csList {
+ top:32px!important
+}
+.AppChat .fancyHome .groupInfoFile .noMoreFiles {
+ border-radius:4px;
+ margin:auto;
+ text-align:center;
+ padding:0 10px 10px
+}
+.AppChat .fancyHome .fileFilter-date {
+ float:right;
+ display:inline-block;
+ vertical-align:bottom;
+ height:30px
+}
+.AppChat .fancyHome .fileSelector-date {
+ max-width:160px;
+ height:30px;
+ line-height:30px;
+ color:#999!important;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-orient:horizontal;
+ -webkit-box-direction:reverse;
+ -ms-flex-direction:row-reverse;
+ flex-direction:row-reverse
+}
+.AppChat .fancyHome .fileSelector-date:before {
+ margin-left:8px;
+ font-size:18px
+}
+.AppChat .fancyHome .fileCardSelector {
+ height:40px;
+ line-height:40px;
+ padding:0 20px;
+ color:#999
+}
+.AppChat .fancyHome .sessionInfo {
+ background:#fff
+}
+.AppChat .fancyHome .sessionInfo .noDataTitle {
+ font-size:16px;
+ margin:auto;
+ color:#999;
+ width:240px;
+ min-width:240px;
+ height:50px;
+ line-height:40px;
+ text-align:center
+}
+.AppChat .fancyHome .sessionInfo .noDataContent {
+ font-size:13px!important;
+ margin:10px 0 0 16px;
+ color:#bdbdbd
+}
+.AppChat .fancyHome .bgColorF1 {
+ background:#f1f1f1
+}
+.AppChat .fancyHome .distanceSpacing {
+ padding:0 15px 0 50px
+}
+.AppChat .fancyHome .feedRedundance {
+ max-height:320px;
+ overflow:hidden
+}
+.AppChat .fancyHome .GroupInfoIndex {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-orient:vertical;
+ -webkit-box-direction:normal;
+ -ms-flex-direction:column;
+ flex-direction:column
+}
+.AppChat .fancyHome .GroupInfoItem {
+ -webkit-box-flex:1;
+ -ms-flex:1;
+ flex:1;
+ padding:16px 0;
+ border-bottom:1px solid #ddd
+}
+.AppChat .fancyHome .GroupInfoItem-header {
+ font-size:14px;
+ padding:0 16px;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-pack:justify;
+ -ms-flex-pack:justify;
+ justify-content:space-between
+}
+.AppChat .fancyHome .GroupInfoItem-body {
+ padding:0 16px
+}
+.AppChat .fancyHome .GroupInfoItem-headerIcon {
+ color:#000;
+ font-size:14px;
+ font-weight:bolder
+}
+.AppChat .fancyHome .GroupInfoItem-entry {
+ font-size:13px;
+ cursor:pointer
+}
+.AppChat .fancyHome .GroupInfoItem-entry:not(:hover) {
+ color:#bdbdbd!important
+}
+.AppChat .fancyHome .GroupInfoItem-entry .icon-sidebar-more {
+ font-size:18px
+}
+.AppChat .fancyHome .GroupInfoItem--members {
+ max-height:110px
+}
+.AppChat .fancyHome .GroupInfoItem-memberList {
+ padding:18px 0 20px;
+ margin-left:10px
+}
+.AppChat .fancyHome .GroupInfoItem-memberList-item {
+ display:inline-block;
+ padding:2px;
+ background:#fff;
+ margin-left:-10px;
+ vertical-align:middle;
+ font-size:0;
+ border-radius:50%
+}
+.AppChat .fancyHome .GroupInfoItem-memberList-item--creator {
+ margin-right:18px
+}
+.AppChat .fancyHome .GroupInfoItem-memberList-itemImg {
+ width:30px;
+ height:30px;
+ border-radius:50%;
+ box-shadow:0 0 1px 0 rgba(0,0,0,.5)
+}
+.AppChat .fancyHome .GroupInfoItem-member--add {
+ display:inline-block;
+ margin-left:12px
+}
+.AppChat .fancyHome .GroupInfoItem-member--add:not(:hover) {
+ color:silver!important
+}
+.AppChat .fancyHome .GroupInfoItem-member--add .icon-chat-person-add {
+ font-size:18px;
+ cursor:pointer
+}
+.AppChat .fancyHome .GroupInfoItem--feeds .GroupInfoItem-body,.AppChat .fancyHome .GroupInfoItem--files .GroupInfoItem-body {
+ padding:4px 0 0
+}
+.AppChat .fancyHome .GroupInfoItem--noFeeds {
+ height:110px;
+ max-height:110px
+}
+.AppChat .fancyHome .GroupInfoItem--noFeeds .GroupInfoItem-body,.AppChat .fancyHome .GroupInfoItem--noFiles .GroupInfoItem-body {
+ padding:0
+}
+.AppChat .fancyHome .GroupInfoItem .GroupInfoItem-feedList .feed-item {
+ border:none!important
+}
+.AppChat .fancyHome .fileList {
+ padding-bottom:55px
+}
+.AppChat .fancyHome .FileItem {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -ms-flex-wrap:wrap;
+ flex-wrap:wrap;
+ position:relative;
+ padding:10px 15px;
+ border-bottom:1px solid #ebebeb;
+ cursor:pointer
+}
+.AppChat .fancyHome .FileItem:hover {
+ background:#f2f2f2
+}
+.AppChat .fancyHome .FileItem:hover .FileItem-download {
+ opacity:1
+}
+.AppChat .fancyHome .FileItem:last-child {
+ border-bottom:0
+}
+.AppChat .fancyHome .FileItem-thumbnail {
+ width:50px;
+ height:50px;
+ margin-right:15px;
+ text-align:center;
+ -webkit-box-flex:0;
+ -ms-flex:0 0 auto;
+ flex:0 0 auto
+}
+.AppChat .fancyHome .FileItem-thumbnail i[class^=iconFile] {
+ width:40px;
+ height:45px
+}
+.AppChat .fancyHome .FileItem-thumbnail img {
+ width:50px;
+ height:50px
+}
+.AppChat .fancyHome .FileItem-thumbnail--withBorder {
+ width:52px;
+ height:52px;
+ border:1px solid #e6e6e6
+}
+.AppChat .fancyHome .FileItem-splitTime {
+ width:100%;
+ margin:10px 0;
+ color:#888;
+ font-size:14px;
+ padding-left:21px;
+ overflow:hidden
+}
+.AppChat .fancyHome .FileItem-name {
+ width:234px;
+ font-size:14px;
+ color:#000;
+ vertical-align:middle;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .FileItem-name:not(:hover) {
+ color:#000!important
+}
+.AppChat .fancyHome .FileItem-info {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-flex:0;
+ -ms-flex:0 0 232px;
+ flex:0 0 232px;
+ -ms-flex-wrap:wrap;
+ flex-wrap:wrap;
+ -ms-flex-line-pack:justify;
+ align-content:space-between;
+ color:#a4a4a4
+}
+.AppChat .fancyHome .FileItem-size {
+ width:54px
+}
+.AppChat .fancyHome .FileItem-creator,.AppChat .fancyHome .FileItem-size {
+ display:inline-block;
+ font-size:12px;
+ vertical-align:middle;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .FileItem-creator {
+ width:78px
+}
+.AppChat .fancyHome .FileItem-download {
+ font-size:20px;
+ position:absolute;
+ right:20px;
+ top:30%;
+ opacity:0;
+ color:#999
+}
+.AppChat .fancyHome .FileItem-download:not(:hover) {
+ color:#999!important
+}
+.AppChat .fancyHome .FileItem-time {
+ display:inline-block;
+ width:100px;
+ font-size:12px;
+ vertical-align:middle;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap
+}
+.AppChat .fancyHome .FileImages-wrapper {
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ padding:0 0 0 20px;
+ -ms-flex-wrap:wrap;
+ flex-wrap:wrap;
+ -ms-flex-line-pack:start;
+ align-content:flex-start
+}
+.AppChat .fancyHome .FileImages-wrapper .FileItem-splitTime {
+ padding-left:0
+}
+.AppChat .fancyHome .FileImages-wrapper .FileImage {
+ margin:0 10px 10px 0
+}
+.AppChat .fancyHome .FileImages-wrapper .FileImage img {
+ cursor:pointer
+}
+.AppChat .fancyHome .FileImages-wrapper .FileImage .FileImage-iamge {
+ width:100px;
+ height:100px
+}
+.AppChat .fancyHome .FileImages-wrapper .FileImage .FileImage-name {
+ color:#757575;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap;
+ width:100px;
+ padding:5px 0 0
+}
+.AppChat .fancyHome .SlideInfo {
+ height:100%;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-orient:vertical;
+ -webkit-box-direction:normal;
+ -ms-flex-direction:column;
+ flex-direction:column
+}
+.AppChat .fancyHome .SlideInfo-filter {
+ height:38px;
+ padding:4px 18px 4px 22px
+}
+.AppChat .fancyHome .SlideInfo-filter .customSelect .ThemeColor3 {
+ color:#9e9e9e!important
+}
+.AppChat .fancyHome .SlideInfo-header {
+ height:48px;
+ padding:14px 14px 14px 10px;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ font-size:14px;
+ -webkit-box-pack:justify;
+ -ms-flex-pack:justify;
+ justify-content:space-between
+}
+.AppChat .fancyHome .SlideInfo-header .icon-arrow-left-border {
+ font-size:18px
+}
+.AppChat .fancyHome .SlideInfo-headerTitle {
+ width:70px
+}
+.AppChat .fancyHome .SlideInfo-header .isForbidInvite {
+ cursor:default;
+ color:#e0dede!important
+}
+.AppChat .fancyHome .SlideInfo .SlideInfo-leftIcon {
+ cursor:pointer
+}
+.AppChat .fancyHome .SlideInfo-body {
+ -webkit-box-flex:1;
+ -ms-flex:1;
+ flex:1
+}
+.AppChat .fancyHome .SlideInfoBar-noFeedImages {
+ width:63px;
+ height:60px;
+ margin:130px auto 25px;
+ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH4AAAB4CAQAAACec44eAAACHElEQVR4Ae3cJXgcARRF4Vdm5sq4MsnoxEcWZJlVmVmVTLlVZZQFVV7VyLh8x5SZeaEQZs68d8/14l+cmQUrizGsJ8UnMo73iRTrGW1VYzkfyQTZR5ZXwLtwmEywHSjDryQTcEvNjNF8Col/z3BjI5mg22g8CItPGc/D4t8ZaTJRZ755wgsvvPDCCy+88MILL7zwwgt/gwuJ2tXWxE+yRMUg4YUXXvjm4vexOlHb3Hy8wwkvvPDCCy+88MILL7zwwp9gT6K2rxl4nc8LL7zwwl/kSKJ2qvl4hxNeeOGFF1544YUXXnjhhd/K/HbZlw7Dd/z5PO+EF1544Tsa/5Bb7bKfHY9P1IQXXnjhhRdeeOGFF1544dOR8aH/Fe1OWPx9Y3VY/GpjFB9D0t8z3MxYERK/qOx/bw+Go++ziljK+0AP+KVWNYaziRRPHb/vp3lKio0Mt/aKOWSaudmW9OhKcbPoxXS15Edhs/CF5iNuNZl+y7zEDNJNoqeZbn7iTJPwZ8xT5PG90fTv5Jmv2N9o/H7zFiN43+gTDn+xoVH4DeYx+vKkQfoT+prPmNcgfp55je6U1Esvobv5jaJ68UXmO+7Xc0HRe+TXic83/3G1Vvo1ixDj+VmD/pPxFiOO1cAfsygxls9V6J8Za3FiZxX8LosUg3hZTn/JIIsVK8vxKy1a9KL0L72UXhYvZpVdnQ8YXXiUW1eLGQUUWAeWBdY6POBWK+EKAAAAAElFTkSuQmCC) no-repeat;
+ background-size:cover
+}
+.AppChat .fancyHome .SlideInfoBar-noContent {
+ font-size:16px!important;
+ margin:auto;
+ color:#bdbdbd;
+ width:300px;
+ min-width:300px;
+ text-align:center
+}
+.AppChat .fancyHome .SlideInfo-filesFilter .customSelect {
+ float:left;
+ margin-right:22px
+}
+.AppChat #feedDialog .header {
+ margin-left:20px;
+ height:60px;
+ color:#333
+}
+.AppChat #feedDialog .header .title {
+ font-size:17px!important;
+ margin-top:20px
+}
+.AppChat #feedDialog .header .dialogCloseBtn {
+ font-size:20px;
+ margin-top:20px;
+ margin-right:20px
+}
+.AppChat #feedDialog .dialog_loadings {
+ margin-top:96px
+}
+.AppChat #feedDialog .dialogContent {
+ min-height:237px;
+ padding:0;
+ border-top:1px solid #ddd
+}
+.AppChat #feedDialog .dialogContent .postCard {
+ margin:0!important
+}
+
+
+
+

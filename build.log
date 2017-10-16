@@ -1,0 +1,107 @@
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective settings
+[WARNING] expected START_TAG or END_TAG not TEXT (position: TEXT seen ...</pluginRepositories -->>\n   </... @271:6)  @ E:\soft\apache-maven-3.0.4\conf\settings.xml, line 271, column 6
+[WARNING] expected START_TAG or END_TAG not TEXT (position: TEXT seen ...</pluginRepositories -->>\n   </... @271:6)  @ C:\Users\Administrator\.m2\settings.xml, line 271, column 6
+[WARNING] 
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.citms:citms-ding:jar:1.0.1-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: cn.citms:m-cloud-core:jar -> duplicate declaration of version ${m-cloud-version} @ line 59, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building citms :: ding 1.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ citms-ding ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ citms-ding ---
+[INFO] Using 'utf-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 641 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ citms-ding ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 115 source files to E:\workspace\danger_work\CitmsDing\target\classes
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] /E:/workspace/danger_work/CitmsDing/src/main/java/cn/citms/tag/ToolKit.java: 某些输入文件使用了未经检查或不安全的操作。
+[WARNING] /E:/workspace/danger_work/CitmsDing/src/main/java/cn/citms/tag/ToolKit.java: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+[WARNING] 某些消息已经过简化; 请使用 -Xdiags:verbose 重新编译以获得完整输出
+[INFO] 3 warnings 
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /E:/workspace/danger_work/CitmsDing/src/main/java/cn/citms/student/api/StudentInfoAPI.java:[80,59] 对于rre(java.util.List<cn.citms.student.item.mongo.StudentInfo>), 找不到合适的方法
+    方法 cn.citms.base.response.OperationResponse.rre(cn.citms.base.exception.Rre)不适用
+      (参数不匹配; java.util.List<cn.citms.student.item.mongo.StudentInfo>无法转换为cn.citms.base.exception.Rre)
+    方法 cn.citms.base.response.OperationResponse.rre(cn.citms.core.bean.Item)不适用
+      (参数不匹配; java.util.List<cn.citms.student.item.mongo.StudentInfo>无法转换为cn.citms.core.bean.Item)
+[ERROR] /E:/workspace/danger_work/CitmsDing/src/main/java/cn/citms/student/api/StudentInfoAPI.java:[120,59] 对于rre(java.lang.String), 找不到合适的方法
+    方法 cn.citms.base.response.OperationResponse.rre(cn.citms.base.exception.Rre)不适用
+      (参数不匹配; java.lang.String无法转换为cn.citms.base.exception.Rre)
+    方法 cn.citms.base.response.OperationResponse.rre(cn.citms.core.bean.Item)不适用
+      (参数不匹配; java.lang.String无法转换为cn.citms.core.bean.Item)
+[ERROR] /E:/workspace/danger_work/CitmsDing/src/main/java/cn/citms/controller/SelectClassAPI.java:[104,60] 对于rre(java.util.List<cn.citms.item.SelectDetail>), 找不到合适的方法
+    方法 cn.citms.base.response.OperationResponse.rre(cn.citms.base.exception.Rre)不适用
+      (参数不匹配; java.util.List<cn.citms.item.SelectDetail>无法转换为cn.citms.base.exception.Rre)
+    方法 cn.citms.base.response.OperationResponse.rre(cn.citms.core.bean.Item)不适用
+      (参数不匹配; java.util.List<cn.citms.item.SelectDetail>无法转换为cn.citms.core.bean.Item)
+[ERROR] /E:/workspace/danger_work/CitmsDing/src/main/java/cn/citms/controller/SchoolMajorAPI.java:[67,59] 对于rre(java.util.List<cn.citms.item.SchoolMajor>), 找不到合适的方法
+    方法 cn.citms.base.response.OperationResponse.rre(cn.citms.base.exception.Rre)不适用
+      (参数不匹配; java.util.List<cn.citms.item.SchoolMajor>无法转换为cn.citms.base.exception.Rre)
+    方法 cn.citms.base.response.OperationResponse.rre(cn.citms.core.bean.Item)不适用
+      (参数不匹配; java.util.List<cn.citms.item.SchoolMajor>无法转换为cn.citms.core.bean.Item)
+[ERROR] /E:/workspace/danger_work/CitmsDing/src/main/java/cn/citms/student/api/StudentAPI.java:[47,59] 对于rre(java.util.List<cn.citms.student.item.Student>), 找不到合适的方法
+    方法 cn.citms.base.response.OperationResponse.rre(cn.citms.base.exception.Rre)不适用
+      (参数不匹配; java.util.List<cn.citms.student.item.Student>无法转换为cn.citms.base.exception.Rre)
+    方法 cn.citms.base.response.OperationResponse.rre(cn.citms.core.bean.Item)不适用
+      (参数不匹配; java.util.List<cn.citms.student.item.Student>无法转换为cn.citms.core.bean.Item)
+[INFO] 5 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9.912s
+[INFO] Finished at: Tue Sep 12 15:31:04 CST 2017
+[INFO] Final Memory: 27M/200M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project citms-ding: Compilation failure: Compilation failure:
+[ERROR] /E:/workspace/danger_work/CitmsDing/src/main/java/cn/citms/student/api/StudentInfoAPI.java:[80,59] 对于rre(java.util.List<cn.citms.student.item.mongo.StudentInfo>), 找不到合适的方法
+[ERROR] 方法 cn.citms.base.response.OperationResponse.rre(cn.citms.base.exception.Rre)不适用
+[ERROR] (参数不匹配; java.util.List<cn.citms.student.item.mongo.StudentInfo>无法转换为cn.citms.base.exception.Rre)
+[ERROR] 方法 cn.citms.base.response.OperationResponse.rre(cn.citms.core.bean.Item)不适用
+[ERROR] (参数不匹配; java.util.List<cn.citms.student.item.mongo.StudentInfo>无法转换为cn.citms.core.bean.Item)
+[ERROR] /E:/workspace/danger_work/CitmsDing/src/main/java/cn/citms/student/api/StudentInfoAPI.java:[120,59] 对于rre(java.lang.String), 找不到合适的方法
+[ERROR] 方法 cn.citms.base.response.OperationResponse.rre(cn.citms.base.exception.Rre)不适用
+[ERROR] (参数不匹配; java.lang.String无法转换为cn.citms.base.exception.Rre)
+[ERROR] 方法 cn.citms.base.response.OperationResponse.rre(cn.citms.core.bean.Item)不适用
+[ERROR] (参数不匹配; java.lang.String无法转换为cn.citms.core.bean.Item)
+[ERROR] /E:/workspace/danger_work/CitmsDing/src/main/java/cn/citms/controller/SelectClassAPI.java:[104,60] 对于rre(java.util.List<cn.citms.item.SelectDetail>), 找不到合适的方法
+[ERROR] 方法 cn.citms.base.response.OperationResponse.rre(cn.citms.base.exception.Rre)不适用
+[ERROR] (参数不匹配; java.util.List<cn.citms.item.SelectDetail>无法转换为cn.citms.base.exception.Rre)
+[ERROR] 方法 cn.citms.base.response.OperationResponse.rre(cn.citms.core.bean.Item)不适用
+[ERROR] (参数不匹配; java.util.List<cn.citms.item.SelectDetail>无法转换为cn.citms.core.bean.Item)
+[ERROR] /E:/workspace/danger_work/CitmsDing/src/main/java/cn/citms/controller/SchoolMajorAPI.java:[67,59] 对于rre(java.util.List<cn.citms.item.SchoolMajor>), 找不到合适的方法
+[ERROR] 方法 cn.citms.base.response.OperationResponse.rre(cn.citms.base.exception.Rre)不适用
+[ERROR] (参数不匹配; java.util.List<cn.citms.item.SchoolMajor>无法转换为cn.citms.base.exception.Rre)
+[ERROR] 方法 cn.citms.base.response.OperationResponse.rre(cn.citms.core.bean.Item)不适用
+[ERROR] (参数不匹配; java.util.List<cn.citms.item.SchoolMajor>无法转换为cn.citms.core.bean.Item)
+[ERROR] /E:/workspace/danger_work/CitmsDing/src/main/java/cn/citms/student/api/StudentAPI.java:[47,59] 对于rre(java.util.List<cn.citms.student.item.Student>), 找不到合适的方法
+[ERROR] 方法 cn.citms.base.response.OperationResponse.rre(cn.citms.base.exception.Rre)不适用
+[ERROR] (参数不匹配; java.util.List<cn.citms.student.item.Student>无法转换为cn.citms.base.exception.Rre)
+[ERROR] 方法 cn.citms.base.response.OperationResponse.rre(cn.citms.core.bean.Item)不适用
+[ERROR] (参数不匹配; java.util.List<cn.citms.student.item.Student>无法转换为cn.citms.core.bean.Item)
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

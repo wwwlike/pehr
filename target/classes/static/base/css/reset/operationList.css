@@ -1,0 +1,480 @@
+html,
+body {
+	width: 100%;
+}
+
+body {
+	height: auto;
+	overflow: auto;
+	padding: 23px;
+	padding-bottom: 100px;
+	background-color: #f7f8fc;
+}
+
+.content {
+	width: 100%;
+	height: auto;
+	background-color: white;
+}
+
+.title {
+	width: 100%;
+	height: 55px;
+	line-height: 55px;
+	font-size: 15px;
+	color: #888888;
+	text-indent: 1.5em;
+}
+
+.filter {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.filter .sureFilter {
+	width: 100%;
+	min-height: 60px;
+	background-color: #eff4fa;
+}
+
+.filter .sureFilter>div {
+	font-size: 14px;
+	color: black;
+	margin-top: 17px;
+	margin-bottom: 17px;
+	width: 263px;
+	height: 28px;
+	position: relative;
+}
+
+.filter .sureFilter>div:first-child {
+	padding-left: 22.5px;
+}
+
+.filter .sureFilter>div input {
+	border: 1px solid #F2F2F2;
+	padding-left: 15px;
+	width: 160px;
+	height: 28px;
+	margin-left: 5px;
+	background: white;
+}
+
+.filter .sureFilter #search {
+	width: 92px;
+	height: 30px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: #0090ff;
+	line-height: 15px;
+	border: none;
+	color: white;
+}
+
+.filter .sureFilter #resetButton {
+	width: 92px;
+	height: 30px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: #1fd7ff;
+	line-height: 15px;
+	border: none;
+	color: white;
+}
+
+.filter .noSureFilter {
+	min-height: 60px;
+	padding: 16px 22px;
+}
+
+.filter .noSureFilter .wrap {
+	border: 1px solid #F2F2F2;
+	padding-left: 15px;
+}
+
+.aLine {
+	width: 100%;
+	min-height: 60px;
+	border-bottom: 1px solid #F2F2F2;
+	padding-left: 80px;
+	position: relative;
+	padding-top: 23px;
+	box-sizing: border-box;
+}
+
+.aLine:last-child {
+	border-bottom: none;
+}
+
+.aLine span {
+	margin-bottom: 23px;
+	margin-right: 10px;
+	font-size: 14px;
+	padding: 4px 8px;
+	display: inline-block;
+	max-width: 250px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.aLine .choosed {
+	background-color: #0090FF;
+	border-radius: 3px;
+	color: white;
+}
+
+.aLine .aTitle {
+	margin-top: 23px;
+	text-align: center;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.aLine .term {
+	cursor: pointer;
+}
+
+.noTerm {
+	cursor: pointer;
+}
+
+.filter .showOrHide {
+	position: absolute;
+	right: 22px;
+	top: 76px;
+	width: 110px;
+	height: 30px;
+	line-height: 24px;
+	border: 1px solid #0090FF;
+	background-color: white;
+	color: #0090FF;
+	z-index: 10;
+}
+
+.filter .showOrHide span:first-child {
+	font-size: 14px;
+}
+
+.filter .showOrHide span:last-child {
+	position: relative;
+	top: 0px;
+	right: -4px;
+}
+
+.listWrap {
+	padding: 0 22px;
+	padding-bottom: 20px;
+	min-height: 500px;
+}
+
+@media screen and (max-height: 600px) {
+	.listWrap {
+		min-height: 300px;
+	}
+}
+
+.listWrap table {
+	border: 1px solid #e4ebf3;
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	border-collapse: separate;
+	table-layout: fixed;
+}
+
+.listWrap table tr {
+	width: 100%;
+}
+
+.listWrap table tr th,
+.listWrap table tr td {
+	text-align: center;
+	line-height: 48px;
+}
+
+.listWrap table thead {
+	background-color: #e4ebf3;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.listWrap table tr th {
+	color: #708094;
+	cursor: pointer;
+}
+
+.listWrap table tr td:nth-child(1) {
+	width: 11%;
+}
+
+.listWrap table tr td:nth-child(2) {
+	width: 9%;
+}
+
+.listWrap table tr td:nth-child(3) {
+	width: 9%;
+}
+
+.listWrap table tr td:nth-child(4) {
+	width: 9%;
+}
+
+.listWrap table tr td:nth-child(5) {
+	width: 10%;
+}
+
+.listWrap table tr td:nth-child(6) {
+	width: 12%;
+}
+
+.listWrap table tr td:nth-child(7) {
+	width: 12%;
+}
+
+.listWrap table tr td:nth-child(8) {
+	width: 13%;
+}
+
+.listWrap table tr td:nth-child(9) {
+	width: 15%;
+	position: relative;
+}
+
+.listWrap table tr td {
+	color: black;
+	height: 48px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.listWrap table tbody tr td {
+	border-bottom: 1px solid #e4ebf3;
+}
+
+.listWrap table tbody tr:last-child td {
+	border-bottom: none;
+}
+
+.listChoosed {
+	background-color: #D5E8FF;
+}
+
+.listChoosed td:last-child span:last-child {
+	display: block;
+	width: 3px;
+	height: 100%;
+	background-color: #42b4f0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+
+/*状态class*/
+
+.aStatus {
+	border-radius: 6px;
+	padding: 4px 10px;
+	cursor: pointer;
+}
+
+.classRgpd {
+	border: 1px solid #3980ee;
+	color: #3980ee;
+}
+
+.classJdz {
+	border: 1px solid #1d9c3f;
+	color: #1d9c3f;
+}
+
+.classDdd {
+	border: 1px solid #fbc13a;
+	color: #fbc13a;
+}
+
+.classClz {
+	border: 1px solid #ff7d3d;
+	color: #ff7d3d;
+}
+
+.classGqsq {
+	border: 1px solid #ff5932;
+	color: #ff5932;
+}
+
+.classTdsq {
+	border: 1px solid #ff5932;
+	color: #ff5932;
+}
+
+.classJdsq {
+	border: 1px solid #ff5932;
+	color: #ff5932;
+}
+
+.classDys {
+	border: 1px solid #3980ee;
+	color: #3980ee;
+}
+
+.classQdz {
+	border: 1px solid #fbe23a;
+	color: #fbe23a;
+}
+
+.classJdzX {
+	border: 1px solid #fbc13a;
+	color: #fbc13a;
+}
+
+.classCzwb {
+	border: 1px solid #1d9c3f;
+	color: #1d9c3f;
+}
+
+.aGreen {
+	border: 1px solid #72d2b0;
+	color: #72d2b0;
+}
+
+.aBlue {
+	border: 1px solid #0090FF;
+	color: #0090FF;
+}
+
+.aRed {
+	border: 1px solid #e5636c;
+	color: #e5636c;
+}
+
+.aOrange {
+	border: 1px solid #ff8e32;
+	color: #e5636c;
+}
+
+.aUnknown {
+	border: 1px solid greenyellow;
+	color: greenyellow;
+}
+
+.paging {
+	text-align: center;
+}
+
+.paging ul {
+	list-style: none;
+}
+
+.paging ul li {
+	display: block;
+	width: ;
+	float: left;
+	border: 1px solid;
+}
+
+.paging .pagination>li:first-child {
+	margin-right: 10px;
+}
+
+.paging input {
+	width: 38px;
+	height: 30px;
+	position: relative;
+	top: -31px;
+	text-align: center;
+}
+
+.paging button {
+	width: 40px;
+	height: 30px;
+	line-height: 25px;
+	position: relative;
+	top: -32px;
+	font-size: 12px;
+}
+
+#equipNum .modal-content {
+	width: 450px;
+	height: 460px;
+	padding: 17px 13px;
+	box-sizing: border-box;
+}
+
+#equipNum .modal-content input {
+	width: 100%;
+	height: 30px;
+	text-indent: 1em;
+	border: 1px solid #CBCBCB;
+}
+
+#equipNum .modal-content .tableList {
+	margin-top: 10px;
+	width: 100%;
+	height: 343px;
+	display: block;
+	border: 1px solid #CBCBCB;
+	box-sizing: border-box;
+}
+
+#equipNum .modal-content .tableList div {
+	display: block;
+}
+
+#equipNum .modal-content .tableList .line {
+	height: 42px;
+	line-height: 42px;
+	border-bottom: 1px solid #CBCBCB;
+	text-align: center;
+	position: relative;
+}
+
+#equipNum .modal-content .tableList .line.aTitle {
+	height: 47px;
+	line-height: 47px;
+	background-color: #dff4fa;
+	border: none;
+}
+
+#equipNum .modal-content .tableList .line.aTitle>div {}
+
+#equipNum .modal-content .tableList .line:last-child {
+	border-bottom: none;
+}
+
+#equipNum .modal-content .tableList .line>div {
+	float: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+#equipNum .modal-content .tableList .line.aChoosed {
+	background-color: #D5E8FF;
+}
+
+#equipNum .modal-content .tableList .line.aChoosed .smallBlock {
+	position: absolute;
+	top: 0;
+	right: 0px;
+	width: 5px;
+	height: 42px;
+	background-color: #42B4F0;
+}
+
+#equipNum .modal-content .tableList .line>div:nth-child(1) {
+	width: 25%;
+}
+
+#equipNum .modal-content .tableList .line>div:nth-child(2) {
+	width: 25%;
+}
+
+#equipNum .modal-content .tableList .line>div:nth-child(3) {
+	width: 50%;
+}

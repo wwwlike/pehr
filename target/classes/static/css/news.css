@@ -1,0 +1,279 @@
+.AppChat .fancyHome .sessionWinList {
+    position: absolute;
+    left: 45px;
+    right: 0;
+    bottom: 0;
+    margin: 18px;
+    -webkit-transform: translateZ(0);
+    overflow: hidden;
+}
+.AppChat .fancyHome * {
+    box-sizing: border-box;
+}
+.relativeContainer {
+    position: relative;
+    top: 10px;
+}
+body *, html * {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.AppChat .fancyHome .sessionWin.isLoading {
+    padding-top: 1px;
+}
+
+.AppChat .fancyHome .sessionWin {
+    width: 100%;
+    height: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    border-radius: 3px;
+    -webkit-transform: translateZ(0);
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+.AppChat .fancyHome .sessionWin {
+    min-width: 500px;
+    overflow: hidden;
+}
+
+.AppChat .fancyHome .sessionWin.active {
+    display: block;
+}
+
+.AppChat .fancyHome .sessionHeader {
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.AppChat .fancyHome .pullRight {
+    float: right;
+}
+.AppChat .fancyHome .sessionAction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 360px;
+    height: 50px;
+    padding-left: 14px;
+    padding-right: 14px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.AppChat .fancyHome * {
+    box-sizing: border-box;
+}
+
+.AppChat .fancyHome .sessionHeader .searchInputContainer {
+    position: relative;
+    width: 100%;
+}
+
+
+.AppChat .fancyHome .sessionHeader .searchInputContainer .searchInput:not(:focus) {
+    border-color: #ddd !important;
+}
+.AppChat .fancyHome .sessionHeader .searchInputContainer .searchInput:not(:focus) {
+    border-color: #ddd !important;
+}
+.AppChat .fancyHome .sessionHeader .searchInputContainer .searchInput {
+    width: 100%;
+    height: 32px;
+    margin-top: 9px;
+    padding-left: 36px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+        border-top-color: rgb(238, 238, 238);
+        border-right-color: rgb(238, 238, 238);
+        border-bottom-color: rgb(238, 238, 238);
+        border-left-color: rgb(238, 238, 238);
+}
+
+.AppChat .fancyHome .sessionHeader .searchInputContainer .searchIcon {
+    font-size: 18px;
+    color: #ababab;
+    position: absolute;
+    top: 16px;
+    left: 10px;
+}
+
+[class*=" icon-"], [class^="icon-"] {
+    font-family: MD_Icon !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.AppChat .fancyHome .sessionHeader-name {
+    font-size: 18px;
+    color: #333;
+    padding: 14px 16px;
+    line-height: 1.3;
+    max-width: 282px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.AppChat .fancyHome .pullLeft {
+    float: left;
+}
+
+
+.AppChat .fancyHome .reactChatInput {
+    width: 100%;
+    background: hsla(0,0%,100%,.6);
+    position: relative;
+    z-index: 10;
+}
+
+
+.AppChat .fancyHome .reactChatInput .chatActionContainer {
+    color: #bdbdbd;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.AppChat .fancyHome .reactChatInput .inputContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.AppChat .fancyHome .reactChatInput .inputWrapper {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 14px 5px 0 14px;
+    line-height: 0;
+    border-top: 1px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.AppChat .fancyHome .reactChatInput .chatActionContainer {
+    color: #bdbdbd;
+}
+
+.AppChat .fancyHome .reactChatInput .sendToolbar {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 110px;
+    flex: 0 110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    border: 1px solid #bdbdbd;
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-left-color: rgb(189, 189, 189);
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+}
+
+
+.AppChat .fancyHome .reactChatInput .chatAction {
+    font-size: 12px;
+    height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+.AppChat .fancyHome .reactChatInput .chatMessage-textarea {
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 0;
+}
+.AppChat .fancyHome .reactChatInput .addToolbar {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 50px;
+    flex: 0 50px;
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-line-pack: center;
+    border: 1px solid #bdbdbd;
+        border-top-color: rgb(189, 189, 189);
+        border-right-color: rgb(189, 189, 189);
+        border-bottom-color: rgb(189, 189, 189);
+        border-left-color: rgb(189, 189, 189);
+    border-radius: 4px 0 0 4px;
+    color: #fff;
+}
+
+
+.AppChat .fancyHome .reactChatInput .addToolbarHover:not(:hover) {
+    color: #9e9e9e;
+    border-color: #bdbdbd !important;
+    background-color: #fff !important;
+}
+.AppChat .fancyHome .reactChatInput .addToolbarHover:not(:hover) {
+    color: #9e9e9e;
+    border-color: #bdbdbd !important;
+    background-color: #fff !important;
+}
+.AppChat .fancyHome .reactChatInput .addToolbar, .AppChat .fancyHome .reactChatInput .addToolbar .icnoBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.AppChat .fancyHome .msgPanel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: relative;
+}
+
+.AppChat .fancyHome .msgPanel > div.nano {
+}
+
+
+

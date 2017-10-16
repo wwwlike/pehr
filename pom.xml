@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+		<groupId>cn.blue</groupId>
+		<artifactId>pehr</artifactId>
+		<name>blue :: pehr</name>
+		<version>1.0.1-SNAPSHOT</version>
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>  
+        <maven.compiler.target>1.8</maven.compiler.target>  
+        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>  
+        <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>  
+		<springside.version>5.0.0-SNAPSHOT</springside.version>
+		<springfox-version>2.6.1</springfox-version>
+		<boot-version>1.5.2.RELEASE</boot-version>
+		<m-cloud-version>1.0.1-SNAPSHOT</m-cloud-version>
+		<commons-io.version>2.4</commons-io.version>
+	</properties>
+	<parent>
+		<groupId>org.springframework.boot</groupId> 
+		<artifactId>spring-boot-starter-parent</artifactId> 
+		<version>1.5.2.RELEASE</version> 
+	</parent>
+	<dependencies>
+	<!-- 
+	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+	</dependency>
+	 -->
+	 <!-- 
+	<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>${springfox-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>${springfox-version}</version>
+		</dependency> 
+		-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- 
+		<dependency>
+			<groupId>cn.citms</groupId>
+			<artifactId>m-cloud-core</artifactId>
+			<version>${m-cloud-version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.sitemesh</groupId>
+			<artifactId>sitemesh</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		 -->
+		
+		<dependency>
+			<groupId>cn.citms</groupId>
+			<artifactId>m-cloud-core</artifactId>
+			<version>${m-cloud-version}</version>
+		</dependency>
+		  <!-- 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+			<version>${boot-version}</version>
+		</dependency>
+		-->
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+        <dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>${commons-io.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		
+		<dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-taglibs</artifactId>
+        </dependency>
+        
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.6.5</version>
+		</dependency>
+		
+         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        
+        <dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+			<scope>provided</scope>
+		</dependency>
+        
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.16</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+           <groupId>javax.servlet</groupId>
+           <artifactId>jstl</artifactId>
+       </dependency>
+       
+       <dependency>
+		  <groupId>com.belerweb</groupId>
+		  <artifactId>pinyin4j</artifactId>
+		  <version>2.5.0</version>
+	  </dependency>
+	  
+	  <dependency>
+		<groupId>com.oracle</groupId>
+		<artifactId>ojdbc6</artifactId>
+		<version>11.2.0</version>
+	 </dependency>
+	
+	</dependencies>
+	<build>
+	<plugins>
+		<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>appassembler-maven-plugin</artifactId>
+				<version>1.8.1</version>
+				<executions>
+					<execution>
+						<id>appassembler</id>
+						<phase>package</phase>
+						<goals>
+							<goal>assemble</goal>
+							<goal>generate-daemons</goal>
+						</goals>
+						<configuration>
+							<repositoryLayout>flat</repositoryLayout>
+							<repositoryName>lib</repositoryName>
+							<configurationSourceDirectory>src/main/resources</configurationSourceDirectory>
+							<configurationDirectory>resources</configurationDirectory>
+							<copyConfigurationDirectory>true</copyConfigurationDirectory>
+							<includeConfigurationDirectoryInClasspath>true</includeConfigurationDirectoryInClasspath>
+							<useWildcardClassPath>true</useWildcardClassPath>
+							<binPrefix>startup</binPrefix>
+							<assembleDirectory>${project.build.directory}/DING</assembleDirectory>
+							<extraJvmArguments>-Xms768m -Xmx1024m -XX:PermSize=128m
+								-XX:MaxPermSize=256m -XX:NewSize=192m -XX:MaxNewSize=384m
+							</extraJvmArguments>
+							<platforms>
+								<platform>windows</platform>
+								<platform>unix</platform>
+							</platforms>
+							<programs>
+								<program>
+									<mainClass>cn.blue.PehrApplication</mainClass>
+									<name>pehr</name>
+								</program>
+							</programs>
+							<target>${project.build.directory}/public</target>
+							<daemons>
+								<daemon>
+									<id>PEHR_START</id>
+									<wrapperMainClass>org.tanukisoftware.wrapper.WrapperSimpleApp</wrapperMainClass>
+									<mainClass>cn.blue.PehrApplication</mainClass>
+									<!-- <commandLineArguments> <commandLineArgument>start</commandLineArgument> 
+										</commandLineArguments> -->
+									<generatorConfigurations>
+										<generatorConfiguration>
+											<generator>jsw</generator>
+											<includes>
+												<include>windows-x86-64</include>
+												<include>windows-x86-32</include>
+											</includes>
+										</generatorConfiguration>
+									</generatorConfigurations>
+									<platforms>
+										<platform>jsw</platform>
+									</platforms>
+									<jvmSettings>
+										<initialMemorySize>768M</initialMemorySize>
+										<maxMemorySize>1024M</maxMemorySize>
+										<maxStackSize>128M</maxStackSize>
+										<!-- <systemProperties> <systemProperty>java.io.tmpdir=C:/dvms-fileserver/tmp</systemProperty> 
+											</systemProperties> -->
+
+										<extraArguments>
+											<extraArgument>-Dorg.tanukisoftware.wrapper.WrapperSimpleApp.waitForStartMain=TRUE</extraArgument>
+											<!--请确保这个文件夹存在 默认win7某些系统下 jsw不能再临时文件夹下建文件 https://jira.atlassian.com/browse/BAM-8014 -->
+											<extraArgument>-Djava.io.tmpdir=C:/moms-fileserver/</extraArgument>
+										</extraArguments>
+									</jvmSettings>
+								</daemon>
+							</daemons>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+	</plugins>
+	
+        
+	</build>
+</project>

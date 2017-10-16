@@ -1,0 +1,269 @@
+html,
+body {
+	width: 100%;
+}
+
+body {
+	height: 100%;
+	padding-bottom: 60px;
+	background-color: #f7f8fc;
+}
+
+.content {
+	padding: 23px;
+	padding-bottom: 80px;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+}
+
+.title {
+	width: 100%;
+	height: 55px;
+	line-height: 55px;
+	font-size: 15px;
+	color: #888888;
+	text-indent: 1.5em;
+	border-bottom: 1px solid #dfdfdf;
+	background-color: white;
+}
+
+.content>div {
+	background-color: white;
+}
+
+.content>div>h5 {
+	margin: 0;
+	height: 60px;
+	text-indent: 2em;
+	line-height: 80px;
+	color: #3E3E3E;
+	font-size: 14px;
+	background-color: white;
+}
+
+.schedule h5 {
+	background: url(../../images/reset/schedule.png) 0px 28px no-repeat;
+}
+
+.data h5 {
+	background: url(../../images/reset/data.png) 0px 28px no-repeat;
+}
+
+.recordOperation h5 {
+	background: url(../../images/reset/recordOperation.png) 0px 28px no-repeat;
+}
+
+.recordApply h5 {
+	background: url(../../images/reset/recordApply.png) 0px 28px no-repeat;
+}
+
+.schedule {
+	padding-bottom: 20px;
+}
+
+.schedule>div {
+	width: 96%;
+	min-height: 129px;
+	background-color: #EFF4FA;
+	margin: 10px auto 0;
+}
+
+.data {
+	margin-top: 20px;
+}
+
+.data>div {
+	width: 100%;
+	height: auto;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.recordOperation {
+	margin-top: 20px;
+}
+
+.recordApply {
+	margin-top: 20px;
+}
+
+.block {
+	width: 96%;
+	height: 50px;
+	margin: 10px auto 0;
+}
+
+.smallBlock {
+	width: 30%;
+	height: 50px;
+	border-bottom: 1px dashed #d3d3d3;
+	float: left;
+	margin-right: 3%;
+	font-size: 14px;
+	line-height: 60px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.pic {
+	position: absolute;
+	width: 30%;
+	height: 180px;
+	right: 4.5%;
+	bottom: 9px;
+}
+
+.pic-title {
+	line-height: 60px;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+.pic-content img {
+	width: 60px;
+	height: 60px;
+	border-radius: 6px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+.recordOperation>div {
+	width: 96%;
+	height: auto;
+	margin: 10px auto 0;
+	padding-bottom: 40px;
+}
+
+.bBlock {
+	width: 100%;
+	height: 64px;
+	padding: 22px 0;
+	position: relative;
+}
+
+.bBlock:nth-child(odd) {
+	background-color: #eff4fa;
+}
+
+.bSmallBlock {
+	width: 20%;
+	margin-right: 3%;
+	height: 22px;
+	line-height: 22px;
+	float: left;
+	border-right: 1px solid #bdbdbd;
+	text-indent: 2em;
+	color: #3f3f3f;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.bSmallBlock span {
+	color: #101010;
+}
+
+.bSmallBlock:last-child {
+	border-right: none;
+}
+
+.havePic {
+	height: 105px;
+	padding: 42px 0;
+}
+
+.picBlock {
+	position: absolute;
+	top: 24px;
+	left: 58%;
+}
+
+.picBlock img {
+	width: 60px;
+	height: 60px;
+	border-radius: 6px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+.recordApply>div {
+	border-top: 1px solid #f7f7f7;
+	width: 100%;
+	height: 256px;
+}
+
+.recordApply>div>div {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.recordApply>div .left {
+	border-right: 1px solid #f7f7f7;
+	box-sizing: border-box;
+}
+
+.recordApply>div .right {}
+
+.cBlock {
+	width: 100%;
+	min-height: 40px;
+	position: relative;
+}
+
+.cBlock label {
+	width: 20%;
+	text-align: right;
+	font-weight: 100;
+}
+
+.cBlock span {
+	width: 80%;
+	text-align: left;
+}
+
+.cText {
+	width: 20%;
+	display: block;
+	float: left;
+	font-size: 14px;
+	padding-top: 15px;
+}
+
+.cImg {
+	position: absolute;
+	left: 20%;
+	top: 15px;
+	width: 80%;
+	min-height: 80px;
+}
+
+.cImg img {
+	width: 60px;
+	height: 60px;
+	border-radius: 6px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+.back {
+	width: 100%;
+	height: 70px;
+	background-color: white;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	box-shadow: 0 -1px 4px #ccc;
+}
+
+.back button {
+	margin-top: 12px;
+	width: 164px;
+	height: 46px;
+	background-color: #0090FF;
+	color: white;
+	border: none;
+}

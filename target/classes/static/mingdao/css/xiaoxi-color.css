@@ -1,0 +1,206 @@
+html{
+	
+}
+body{
+	
+}
+
+.header{
+	background-color: #3393E6;
+	box-shadow: 0px 10px 10px #C4C6C9;
+}
+.header-left{
+	
+}
+.header-daohang{
+	
+}
+.header-right{
+	
+}
+.quanquan{
+	background-color: #F9C63F;	
+	color: white;
+}
+
+
+.header-left ul{
+	color: #E9F3FC;
+}
+.header-left ul li{
+
+
+}
+.header-left ul li:hover{
+	color: white;
+}
+.header-daohang ul{
+
+	color: #E9F3FC;
+}
+
+.header-daohang ul li{
+
+}
+
+.header-right ul{
+	
+	color: #E9F3FC;
+}
+.header-right ul li{
+
+}
+.header-right ul li:hover{
+	color: white;
+}
+.bg-znss{
+	
+	background-color: #3393E6;
+}
+.clear{
+	clear: both;
+}
+
+a{
+	text-decoration: none;
+	color: #E9F3FC;
+}
+a:hover{
+	color: white;
+}
+#container{
+
+}
+.center{
+	
+	border: 1px solid red;
+	
+	
+}
+.center-left{
+
+	
+}
+.center-left-header{
+	border-bottom: 1px solid grey;
+	
+}
+.sousuo{
+	
+}
+.sousuokuang{
+	border: none;outline:none;
+}
+
+.box1-guanbi{
+	
+	
+}
+.box1-laba{
+	background-color: #3393E6;
+}
+.box1-xinxi{
+	
+}
+.box1-xinxi-top{
+	
+}
+.box1-xinxi-bottom{
+	color: gray;
+}
+.center-left-bottom{
+	
+	border-right: 1px solid gainsboro;
+	border-top: 1px solid gainsboro;
+	
+}
+.pluskuangkuang{
+	border: 1px solid gainsboro;
+	
+}
+.pluskuangkuang:hover{
+	background-color: gainsboro;
+}
+.center-right{
+	
+	background-color: #F2F4F8;
+	border-left: 1px solid gainsboro;
+	box-shadow: 0px 0 5px #C4C6C9;
+	
+}
+.center-right-middle{
+	box-shadow: 0px 0px 5px #C4C6C9;
+	background-color: white;
+	border: 1px solid gainsboro;
+}
+.l-dhbian{
+	color:#3393E6 ;
+}
+.l-dhbianhui{
+	color:darkgray ;
+}
+.xianshi{
+	display: block;
+}
+.yincang{
+	display: none;
+}.center-left-BBbox1{
+	background-color: white;
+}
+.center-left-BBbox1:hover{
+	background-color: gainsboro;
+	
+}
+.c-r-m-header ul{
+	
+}
+.c-r-m-header ul li{
+	color: gray;
+	border-bottom: 3px solid gainsboro;	
+}
+.c-r-m-header ul li:hover{
+	border-bottom: 3px solid #3393E6;
+	color: #2B76C9;
+}
+.cr-lise{
+	border-bottom: 3px solid #3393E6;
+	color: #2B76C9;
+}
+.rwk-1:hover{
+	background-color: gainsboro;
+}
+.rwk-2:hover{
+	background-color: gainsboro;
+}
+.renwuk-2{
+	border-top: 1px solid grey;
+}
+.renwuk{
+	border: 1px solid gainsboro;
+	background-color: white;
+	box-shadow: 0px 0px 5px gainsboro;
+}
+#black-font{
+	color: black;
+}
+#white-font{
+	color: white;
+}
+.grayfont{
+	color: gray;
+}
+.bluefont{
+	color: #2B76C9;
+}
+.qsbluefont{
+	color: #BBDEFB;
+}
+.greyfont{
+	color: grey;
+}
+.pluskuang-1:hover{
+	background-color: gainsboro;
+}
+.center-left-Bbox1{
+	border-top: 1px solid gainsboro;
+}
