@@ -10,8 +10,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.tags.RequestContextAwareTag;
 
 import cn.blue.item.SelectDetail;
-import cn.blue.service.SelectClassService;
-import cn.blue.service.SelectDetailService;
+import cn.blue.sys.service.SelectClassService;
+import cn.blue.sys.service.SelectDetailService;
 @Service
 public class CustomLabelTag extends RequestContextAwareTag{
 	
